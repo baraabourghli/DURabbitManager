@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DURabbitManager_Example' do
+  pod 'DURabbitManager', :path => '../'
+
+  target 'DURabbitManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
