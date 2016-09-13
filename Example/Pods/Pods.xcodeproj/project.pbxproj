@@ -16,11 +16,93 @@
 		6CE9185A6197A8A2997BB03AF340D45B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		A0F32E0BD4AE08873F8209A87D3DD489 /* DURabbitManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A17212ADD4DE1CD3A0E0FF50945954B0 /* DURabbitManager-dummy.m */; };
 		E753CE05F40897B9B8AF6B398FCB9127 /* Pods-DURabbitManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B924AC88D8C4EBB9744826AD244D1D7B /* Pods-DURabbitManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7E07DA81D82955000A295B3 /* libcrypto-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E07DA41D82955000A295B3 /* libcrypto-tvOS.a */; };
-		E7E07DA91D82955000A295B3 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E07DA51D82955000A295B3 /* libcrypto.a */; };
-		E7E07DAA1D82955000A295B3 /* libssl-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E07DA61D82955000A295B3 /* libssl-tvOS.a */; };
-		E7E07DAB1D82955000A295B3 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E07DA71D82955000A295B3 /* libssl.a */; };
-		E7E07DAD1D82955B00A295B3 /* librabbitmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E07DAC1D82955B00A295B3 /* librabbitmq.a */; };
+		E7E01A451D87CEC400F5C13A /* amqp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A441D87CEC400F5C13A /* amqp.h */; };
+		E7E01A491D87CECD00F5C13A /* amqp_framing.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A461D87CECD00F5C13A /* amqp_framing.h */; };
+		E7E01A4A1D87CECD00F5C13A /* amqp_ssl_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A471D87CECD00F5C13A /* amqp_ssl_socket.h */; };
+		E7E01A4B1D87CECD00F5C13A /* amqp_tcp_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A481D87CECD00F5C13A /* amqp_tcp_socket.h */; };
+		E7E01A971D87CEDA00F5C13A /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A4C1D87CEDA00F5C13A /* aes.h */; };
+		E7E01A981D87CEDA00F5C13A /* asn1_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A4D1D87CEDA00F5C13A /* asn1_mac.h */; };
+		E7E01A991D87CEDA00F5C13A /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A4E1D87CEDA00F5C13A /* asn1.h */; };
+		E7E01A9A1D87CEDA00F5C13A /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A4F1D87CEDA00F5C13A /* asn1t.h */; };
+		E7E01A9B1D87CEDA00F5C13A /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A501D87CEDA00F5C13A /* bio.h */; };
+		E7E01A9C1D87CEDA00F5C13A /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A511D87CEDA00F5C13A /* blowfish.h */; };
+		E7E01A9D1D87CEDA00F5C13A /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A521D87CEDA00F5C13A /* bn.h */; };
+		E7E01A9E1D87CEDA00F5C13A /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A531D87CEDA00F5C13A /* buffer.h */; };
+		E7E01A9F1D87CEDA00F5C13A /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A541D87CEDA00F5C13A /* camellia.h */; };
+		E7E01AA01D87CEDA00F5C13A /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A551D87CEDA00F5C13A /* cast.h */; };
+		E7E01AA11D87CEDA00F5C13A /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A561D87CEDA00F5C13A /* cmac.h */; };
+		E7E01AA21D87CEDA00F5C13A /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A571D87CEDA00F5C13A /* cms.h */; };
+		E7E01AA31D87CEDA00F5C13A /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A581D87CEDA00F5C13A /* comp.h */; };
+		E7E01AA41D87CEDA00F5C13A /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A591D87CEDA00F5C13A /* conf_api.h */; };
+		E7E01AA51D87CEDA00F5C13A /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A5A1D87CEDA00F5C13A /* conf.h */; };
+		E7E01AA61D87CEDA00F5C13A /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A5B1D87CEDA00F5C13A /* crypto.h */; };
+		E7E01AA71D87CEDA00F5C13A /* des_old.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A5C1D87CEDA00F5C13A /* des_old.h */; };
+		E7E01AA81D87CEDA00F5C13A /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A5D1D87CEDA00F5C13A /* des.h */; };
+		E7E01AA91D87CEDA00F5C13A /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A5E1D87CEDA00F5C13A /* dh.h */; };
+		E7E01AAA1D87CEDA00F5C13A /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A5F1D87CEDA00F5C13A /* dsa.h */; };
+		E7E01AAB1D87CEDA00F5C13A /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A601D87CEDA00F5C13A /* dso.h */; };
+		E7E01AAC1D87CEDA00F5C13A /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A611D87CEDA00F5C13A /* dtls1.h */; };
+		E7E01AAD1D87CEDA00F5C13A /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A621D87CEDA00F5C13A /* e_os2.h */; };
+		E7E01AAE1D87CEDA00F5C13A /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A631D87CEDA00F5C13A /* ebcdic.h */; };
+		E7E01AAF1D87CEDA00F5C13A /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A641D87CEDA00F5C13A /* ec.h */; };
+		E7E01AB01D87CEDA00F5C13A /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A651D87CEDA00F5C13A /* ecdh.h */; };
+		E7E01AB11D87CEDA00F5C13A /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A661D87CEDA00F5C13A /* ecdsa.h */; };
+		E7E01AB21D87CEDA00F5C13A /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A671D87CEDA00F5C13A /* engine.h */; };
+		E7E01AB31D87CEDA00F5C13A /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A681D87CEDA00F5C13A /* err.h */; };
+		E7E01AB41D87CEDA00F5C13A /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A691D87CEDA00F5C13A /* evp.h */; };
+		E7E01AB51D87CEDA00F5C13A /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A6A1D87CEDA00F5C13A /* hmac.h */; };
+		E7E01AB61D87CEDA00F5C13A /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A6B1D87CEDA00F5C13A /* idea.h */; };
+		E7E01AB71D87CEDA00F5C13A /* krb5_asn.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A6C1D87CEDA00F5C13A /* krb5_asn.h */; };
+		E7E01AB81D87CEDA00F5C13A /* kssl.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A6D1D87CEDA00F5C13A /* kssl.h */; };
+		E7E01AB91D87CEDA00F5C13A /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A6E1D87CEDA00F5C13A /* lhash.h */; };
+		E7E01ABA1D87CEDA00F5C13A /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A6F1D87CEDA00F5C13A /* md4.h */; };
+		E7E01ABB1D87CEDA00F5C13A /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A701D87CEDA00F5C13A /* md5.h */; };
+		E7E01ABC1D87CEDA00F5C13A /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A711D87CEDA00F5C13A /* mdc2.h */; };
+		E7E01ABD1D87CEDA00F5C13A /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A721D87CEDA00F5C13A /* modes.h */; };
+		E7E01ABE1D87CEDA00F5C13A /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A731D87CEDA00F5C13A /* obj_mac.h */; };
+		E7E01ABF1D87CEDA00F5C13A /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A741D87CEDA00F5C13A /* objects.h */; };
+		E7E01AC01D87CEDA00F5C13A /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A751D87CEDA00F5C13A /* ocsp.h */; };
+		E7E01AC11D87CEDA00F5C13A /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A761D87CEDA00F5C13A /* opensslconf.h */; };
+		E7E01AC21D87CEDA00F5C13A /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A771D87CEDA00F5C13A /* opensslv.h */; };
+		E7E01AC31D87CEDA00F5C13A /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A781D87CEDA00F5C13A /* ossl_typ.h */; };
+		E7E01AC41D87CEDA00F5C13A /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A791D87CEDA00F5C13A /* pem.h */; };
+		E7E01AC51D87CEDA00F5C13A /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A7A1D87CEDA00F5C13A /* pem2.h */; };
+		E7E01AC61D87CEDA00F5C13A /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A7B1D87CEDA00F5C13A /* pkcs7.h */; };
+		E7E01AC71D87CEDA00F5C13A /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A7C1D87CEDA00F5C13A /* pkcs12.h */; };
+		E7E01AC81D87CEDA00F5C13A /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A7D1D87CEDA00F5C13A /* pqueue.h */; };
+		E7E01AC91D87CEDA00F5C13A /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A7E1D87CEDA00F5C13A /* rand.h */; };
+		E7E01ACA1D87CEDA00F5C13A /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A7F1D87CEDA00F5C13A /* rc2.h */; };
+		E7E01ACB1D87CEDA00F5C13A /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A801D87CEDA00F5C13A /* rc4.h */; };
+		E7E01ACC1D87CEDA00F5C13A /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A811D87CEDA00F5C13A /* ripemd.h */; };
+		E7E01ACD1D87CEDA00F5C13A /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A821D87CEDA00F5C13A /* rsa.h */; };
+		E7E01ACE1D87CEDA00F5C13A /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A831D87CEDA00F5C13A /* safestack.h */; };
+		E7E01ACF1D87CEDA00F5C13A /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A841D87CEDA00F5C13A /* seed.h */; };
+		E7E01AD01D87CEDA00F5C13A /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A851D87CEDA00F5C13A /* sha.h */; };
+		E7E01AD11D87CEDA00F5C13A /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A861D87CEDA00F5C13A /* srp.h */; };
+		E7E01AD21D87CEDA00F5C13A /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A871D87CEDA00F5C13A /* srtp.h */; };
+		E7E01AD31D87CEDA00F5C13A /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A881D87CEDA00F5C13A /* ssl.h */; };
+		E7E01AD41D87CEDA00F5C13A /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A891D87CEDA00F5C13A /* ssl2.h */; };
+		E7E01AD51D87CEDA00F5C13A /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A8A1D87CEDA00F5C13A /* ssl3.h */; };
+		E7E01AD61D87CEDA00F5C13A /* ssl23.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A8B1D87CEDA00F5C13A /* ssl23.h */; };
+		E7E01AD71D87CEDA00F5C13A /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A8C1D87CEDA00F5C13A /* stack.h */; };
+		E7E01AD81D87CEDA00F5C13A /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A8D1D87CEDA00F5C13A /* symhacks.h */; };
+		E7E01AD91D87CEDA00F5C13A /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A8E1D87CEDA00F5C13A /* tls1.h */; };
+		E7E01ADA1D87CEDA00F5C13A /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A8F1D87CEDA00F5C13A /* ts.h */; };
+		E7E01ADB1D87CEDA00F5C13A /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A901D87CEDA00F5C13A /* txt_db.h */; };
+		E7E01ADC1D87CEDA00F5C13A /* ui_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A911D87CEDA00F5C13A /* ui_compat.h */; };
+		E7E01ADD1D87CEDA00F5C13A /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A921D87CEDA00F5C13A /* ui.h */; };
+		E7E01ADE1D87CEDA00F5C13A /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A931D87CEDA00F5C13A /* whrlpool.h */; };
+		E7E01ADF1D87CEDA00F5C13A /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A941D87CEDA00F5C13A /* x509_vfy.h */; };
+		E7E01AE01D87CEDA00F5C13A /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A951D87CEDA00F5C13A /* x509.h */; };
+		E7E01AE11D87CEDA00F5C13A /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E01A961D87CEDA00F5C13A /* x509v3.h */; };
+		E7E01AE61D87D03900F5C13A /* libcrypto-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E01AE21D87D03900F5C13A /* libcrypto-tvOS.a */; };
+		E7E01AE71D87D03900F5C13A /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E01AE31D87D03900F5C13A /* libcrypto.a */; };
+		E7E01AE81D87D03900F5C13A /* libssl-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E01AE41D87D03900F5C13A /* libssl-tvOS.a */; };
+		E7E01AE91D87D03900F5C13A /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E01AE51D87D03900F5C13A /* libssl.a */; };
+		E7E01AEF1D87D05700F5C13A /* libcrypto-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E01AEB1D87D05700F5C13A /* libcrypto-tvOS.a */; };
+		E7E01AF01D87D05700F5C13A /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E01AEC1D87D05700F5C13A /* libcrypto.a */; };
+		E7E01AF11D87D05700F5C13A /* libssl-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E01AED1D87D05700F5C13A /* libssl-tvOS.a */; };
+		E7E01AF21D87D05700F5C13A /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E01AEE1D87D05700F5C13A /* libssl.a */; };
 		E992C60A9D441867002E91EACD6FB39E /* DURabbitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E06B45507BB7F6F0110DC6A728741B /* DURabbitManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F64FD7FE1683925D04402B8F9186CDF0 /* Pods-DURabbitManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B90EE1F271EFAEF5A601ED13A8C78705 /* Pods-DURabbitManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -66,11 +148,93 @@
 		CAB1D817CCD3FA2EA89AF98672177BFC /* DURabbitManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DURabbitManager-prefix.pch"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DC8CD20A78FB72AFAEF81985383A6697 /* DURabbitManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DURabbitManager.modulemap; sourceTree = "<group>"; };
-		E7E07DA41D82955000A295B3 /* libcrypto-tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-tvOS.a"; path = "lib/openssl/libcrypto-tvOS.a"; sourceTree = "<group>"; };
-		E7E07DA51D82955000A295B3 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/openssl/libcrypto.a; sourceTree = "<group>"; };
-		E7E07DA61D82955000A295B3 /* libssl-tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-tvOS.a"; path = "lib/openssl/libssl-tvOS.a"; sourceTree = "<group>"; };
-		E7E07DA71D82955000A295B3 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/openssl/libssl.a; sourceTree = "<group>"; };
-		E7E07DAC1D82955B00A295B3 /* librabbitmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librabbitmq.a; path = lib/rabbitmq/librabbitmq.a; sourceTree = "<group>"; };
+		E7E01A441D87CEC400F5C13A /* amqp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amqp.h; path = ../../../../DURabbitManager/Classes/Headers/rabbitmq/amqp.h; sourceTree = "<group>"; };
+		E7E01A461D87CECD00F5C13A /* amqp_framing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amqp_framing.h; path = ../../../../DURabbitManager/Classes/Headers/rabbitmq/amqp_framing.h; sourceTree = "<group>"; };
+		E7E01A471D87CECD00F5C13A /* amqp_ssl_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amqp_ssl_socket.h; path = ../../../../DURabbitManager/Classes/Headers/rabbitmq/amqp_ssl_socket.h; sourceTree = "<group>"; };
+		E7E01A481D87CECD00F5C13A /* amqp_tcp_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amqp_tcp_socket.h; path = ../../../../DURabbitManager/Classes/Headers/rabbitmq/amqp_tcp_socket.h; sourceTree = "<group>"; };
+		E7E01A4C1D87CEDA00F5C13A /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aes.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/aes.h; sourceTree = "<group>"; };
+		E7E01A4D1D87CEDA00F5C13A /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/asn1_mac.h; sourceTree = "<group>"; };
+		E7E01A4E1D87CEDA00F5C13A /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/asn1.h; sourceTree = "<group>"; };
+		E7E01A4F1D87CEDA00F5C13A /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/asn1t.h; sourceTree = "<group>"; };
+		E7E01A501D87CEDA00F5C13A /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bio.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/bio.h; sourceTree = "<group>"; };
+		E7E01A511D87CEDA00F5C13A /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/blowfish.h; sourceTree = "<group>"; };
+		E7E01A521D87CEDA00F5C13A /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bn.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/bn.h; sourceTree = "<group>"; };
+		E7E01A531D87CEDA00F5C13A /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/buffer.h; sourceTree = "<group>"; };
+		E7E01A541D87CEDA00F5C13A /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/camellia.h; sourceTree = "<group>"; };
+		E7E01A551D87CEDA00F5C13A /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cast.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/cast.h; sourceTree = "<group>"; };
+		E7E01A561D87CEDA00F5C13A /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/cmac.h; sourceTree = "<group>"; };
+		E7E01A571D87CEDA00F5C13A /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cms.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/cms.h; sourceTree = "<group>"; };
+		E7E01A581D87CEDA00F5C13A /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = comp.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/comp.h; sourceTree = "<group>"; };
+		E7E01A591D87CEDA00F5C13A /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/conf_api.h; sourceTree = "<group>"; };
+		E7E01A5A1D87CEDA00F5C13A /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conf.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/conf.h; sourceTree = "<group>"; };
+		E7E01A5B1D87CEDA00F5C13A /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/crypto.h; sourceTree = "<group>"; };
+		E7E01A5C1D87CEDA00F5C13A /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/des_old.h; sourceTree = "<group>"; };
+		E7E01A5D1D87CEDA00F5C13A /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/des.h; sourceTree = "<group>"; };
+		E7E01A5E1D87CEDA00F5C13A /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dh.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/dh.h; sourceTree = "<group>"; };
+		E7E01A5F1D87CEDA00F5C13A /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/dsa.h; sourceTree = "<group>"; };
+		E7E01A601D87CEDA00F5C13A /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dso.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/dso.h; sourceTree = "<group>"; };
+		E7E01A611D87CEDA00F5C13A /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/dtls1.h; sourceTree = "<group>"; };
+		E7E01A621D87CEDA00F5C13A /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/e_os2.h; sourceTree = "<group>"; };
+		E7E01A631D87CEDA00F5C13A /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ebcdic.h; sourceTree = "<group>"; };
+		E7E01A641D87CEDA00F5C13A /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ec.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ec.h; sourceTree = "<group>"; };
+		E7E01A651D87CEDA00F5C13A /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ecdh.h; sourceTree = "<group>"; };
+		E7E01A661D87CEDA00F5C13A /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ecdsa.h; sourceTree = "<group>"; };
+		E7E01A671D87CEDA00F5C13A /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = engine.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/engine.h; sourceTree = "<group>"; };
+		E7E01A681D87CEDA00F5C13A /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = err.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/err.h; sourceTree = "<group>"; };
+		E7E01A691D87CEDA00F5C13A /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = evp.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/evp.h; sourceTree = "<group>"; };
+		E7E01A6A1D87CEDA00F5C13A /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/hmac.h; sourceTree = "<group>"; };
+		E7E01A6B1D87CEDA00F5C13A /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = idea.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/idea.h; sourceTree = "<group>"; };
+		E7E01A6C1D87CEDA00F5C13A /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/krb5_asn.h; sourceTree = "<group>"; };
+		E7E01A6D1D87CEDA00F5C13A /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/kssl.h; sourceTree = "<group>"; };
+		E7E01A6E1D87CEDA00F5C13A /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/lhash.h; sourceTree = "<group>"; };
+		E7E01A6F1D87CEDA00F5C13A /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md4.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/md4.h; sourceTree = "<group>"; };
+		E7E01A701D87CEDA00F5C13A /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/md5.h; sourceTree = "<group>"; };
+		E7E01A711D87CEDA00F5C13A /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/mdc2.h; sourceTree = "<group>"; };
+		E7E01A721D87CEDA00F5C13A /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modes.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/modes.h; sourceTree = "<group>"; };
+		E7E01A731D87CEDA00F5C13A /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/obj_mac.h; sourceTree = "<group>"; };
+		E7E01A741D87CEDA00F5C13A /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = objects.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/objects.h; sourceTree = "<group>"; };
+		E7E01A751D87CEDA00F5C13A /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ocsp.h; sourceTree = "<group>"; };
+		E7E01A761D87CEDA00F5C13A /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/opensslconf.h; sourceTree = "<group>"; };
+		E7E01A771D87CEDA00F5C13A /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/opensslv.h; sourceTree = "<group>"; };
+		E7E01A781D87CEDA00F5C13A /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ossl_typ.h; sourceTree = "<group>"; };
+		E7E01A791D87CEDA00F5C13A /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/pem.h; sourceTree = "<group>"; };
+		E7E01A7A1D87CEDA00F5C13A /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/pem2.h; sourceTree = "<group>"; };
+		E7E01A7B1D87CEDA00F5C13A /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/pkcs7.h; sourceTree = "<group>"; };
+		E7E01A7C1D87CEDA00F5C13A /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/pkcs12.h; sourceTree = "<group>"; };
+		E7E01A7D1D87CEDA00F5C13A /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/pqueue.h; sourceTree = "<group>"; };
+		E7E01A7E1D87CEDA00F5C13A /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rand.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/rand.h; sourceTree = "<group>"; };
+		E7E01A7F1D87CEDA00F5C13A /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/rc2.h; sourceTree = "<group>"; };
+		E7E01A801D87CEDA00F5C13A /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/rc4.h; sourceTree = "<group>"; };
+		E7E01A811D87CEDA00F5C13A /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ripemd.h; sourceTree = "<group>"; };
+		E7E01A821D87CEDA00F5C13A /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/rsa.h; sourceTree = "<group>"; };
+		E7E01A831D87CEDA00F5C13A /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/safestack.h; sourceTree = "<group>"; };
+		E7E01A841D87CEDA00F5C13A /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = seed.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/seed.h; sourceTree = "<group>"; };
+		E7E01A851D87CEDA00F5C13A /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/sha.h; sourceTree = "<group>"; };
+		E7E01A861D87CEDA00F5C13A /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srp.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/srp.h; sourceTree = "<group>"; };
+		E7E01A871D87CEDA00F5C13A /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/srtp.h; sourceTree = "<group>"; };
+		E7E01A881D87CEDA00F5C13A /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ssl.h; sourceTree = "<group>"; };
+		E7E01A891D87CEDA00F5C13A /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ssl2.h; sourceTree = "<group>"; };
+		E7E01A8A1D87CEDA00F5C13A /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ssl3.h; sourceTree = "<group>"; };
+		E7E01A8B1D87CEDA00F5C13A /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ssl23.h; sourceTree = "<group>"; };
+		E7E01A8C1D87CEDA00F5C13A /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/stack.h; sourceTree = "<group>"; };
+		E7E01A8D1D87CEDA00F5C13A /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/symhacks.h; sourceTree = "<group>"; };
+		E7E01A8E1D87CEDA00F5C13A /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/tls1.h; sourceTree = "<group>"; };
+		E7E01A8F1D87CEDA00F5C13A /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ts.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ts.h; sourceTree = "<group>"; };
+		E7E01A901D87CEDA00F5C13A /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/txt_db.h; sourceTree = "<group>"; };
+		E7E01A911D87CEDA00F5C13A /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ui_compat.h; sourceTree = "<group>"; };
+		E7E01A921D87CEDA00F5C13A /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/ui.h; sourceTree = "<group>"; };
+		E7E01A931D87CEDA00F5C13A /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/whrlpool.h; sourceTree = "<group>"; };
+		E7E01A941D87CEDA00F5C13A /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/x509_vfy.h; sourceTree = "<group>"; };
+		E7E01A951D87CEDA00F5C13A /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/x509.h; sourceTree = "<group>"; };
+		E7E01A961D87CEDA00F5C13A /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = ../../../../DURabbitManager/Classes/Headers/openssl/x509v3.h; sourceTree = "<group>"; };
+		E7E01AE21D87D03900F5C13A /* libcrypto-tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-tvOS.a"; path = "../../../../DURabbitManager/Classes/lib/openssl/libcrypto-tvOS.a"; sourceTree = "<group>"; };
+		E7E01AE31D87D03900F5C13A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../DURabbitManager/Classes/lib/openssl/libcrypto.a; sourceTree = "<group>"; };
+		E7E01AE41D87D03900F5C13A /* libssl-tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-tvOS.a"; path = "../../../../DURabbitManager/Classes/lib/openssl/libssl-tvOS.a"; sourceTree = "<group>"; };
+		E7E01AE51D87D03900F5C13A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../../../DURabbitManager/Classes/lib/openssl/libssl.a; sourceTree = "<group>"; };
+		E7E01AEB1D87D05700F5C13A /* libcrypto-tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-tvOS.a"; path = "../../../../DURabbitManager/Classes/lib/openssl/libcrypto-tvOS.a"; sourceTree = "<group>"; };
+		E7E01AEC1D87D05700F5C13A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../DURabbitManager/Classes/lib/openssl/libcrypto.a; sourceTree = "<group>"; };
+		E7E01AED1D87D05700F5C13A /* libssl-tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-tvOS.a"; path = "../../../../DURabbitManager/Classes/lib/openssl/libssl-tvOS.a"; sourceTree = "<group>"; };
+		E7E01AEE1D87D05700F5C13A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../../../DURabbitManager/Classes/lib/openssl/libssl.a; sourceTree = "<group>"; };
 		E9E06B45507BB7F6F0110DC6A728741B /* DURabbitManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DURabbitManager.h; sourceTree = "<group>"; };
 		F004B496F776BF5546BE46DBED6BA4F8 /* Pods-DURabbitManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DURabbitManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F0F8B7E7C30C96BDA05CBA302293C0DA /* DURabbitManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DURabbitManager.xcconfig; sourceTree = "<group>"; };
@@ -89,12 +253,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7E07DAD1D82955B00A295B3 /* librabbitmq.a in Frameworks */,
-				E7E07DA81D82955000A295B3 /* libcrypto-tvOS.a in Frameworks */,
-				E7E07DA91D82955000A295B3 /* libcrypto.a in Frameworks */,
-				E7E07DAA1D82955000A295B3 /* libssl-tvOS.a in Frameworks */,
-				E7E07DAB1D82955000A295B3 /* libssl.a in Frameworks */,
+				E7E01AE91D87D03900F5C13A /* libssl.a in Frameworks */,
+				E7E01AE61D87D03900F5C13A /* libcrypto-tvOS.a in Frameworks */,
+				E7E01AF21D87D05700F5C13A /* libssl.a in Frameworks */,
+				E7E01AEF1D87D05700F5C13A /* libcrypto-tvOS.a in Frameworks */,
 				602DE3346DCFB607EE88559E45E969DC /* Foundation.framework in Frameworks */,
+				E7E01AE81D87D03900F5C13A /* libssl-tvOS.a in Frameworks */,
+				E7E01AE71D87D03900F5C13A /* libcrypto.a in Frameworks */,
+				E7E01AF11D87D05700F5C13A /* libssl-tvOS.a in Frameworks */,
+				E7E01AF01D87D05700F5C13A /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				5A72CAE7FB528E797510379678894541 /* Classes */,
+				339C0FBB2A06083FF09BA5AFD698E1EB /* Support Files */,
 			);
 			path = DURabbitManager;
 			sourceTree = "<group>";
@@ -137,7 +305,7 @@
 				97E7482DC1926946B24708E08AD5DCEF /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DURabbitManager";
+			path = "../Example/Pods/Target Support Files/DURabbitManager";
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -169,6 +337,7 @@
 		5A72CAE7FB528E797510379678894541 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E7E019851D87CAC800F5C13A /* Headers */,
 				E9E06B45507BB7F6F0110DC6A728741B /* DURabbitManager.h */,
 				C8CAC6980D5C55E0C3914D754FD2D9AF /* DURabbitManager.m */,
 			);
@@ -179,7 +348,6 @@
 			isa = PBXGroup;
 			children = (
 				0187BBD409A67D764DFDEE77BC2304F4 /* DURabbitManager */,
-				339C0FBB2A06083FF09BA5AFD698E1EB /* Support Files */,
 			);
 			name = DURabbitManager;
 			path = ../..;
@@ -225,11 +393,6 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E7E07DAC1D82955B00A295B3 /* librabbitmq.a */,
-				E7E07DA41D82955000A295B3 /* libcrypto-tvOS.a */,
-				E7E07DA51D82955000A295B3 /* libcrypto.a */,
-				E7E07DA61D82955000A295B3 /* libssl-tvOS.a */,
-				E7E07DA71D82955000A295B3 /* libssl.a */,
 				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
 			name = Frameworks;
@@ -243,6 +406,125 @@
 				0123297DFB88BC84D6076E0E78BE0D38 /* Pods_DURabbitManager_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E7E019851D87CAC800F5C13A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E7E01AEA1D87D04800F5C13A /* Library */,
+				E7E01A1D1D87CAF700F5C13A /* RabbitMQ */,
+				E7E01A1C1D87CAEF00F5C13A /* OpenSSL */,
+			);
+			name = Headers;
+			path = "../../Example/Pods/Target Support Files/DURabbitManager";
+			sourceTree = "<group>";
+		};
+		E7E01A1C1D87CAEF00F5C13A /* OpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				E7E01A4C1D87CEDA00F5C13A /* aes.h */,
+				E7E01A4D1D87CEDA00F5C13A /* asn1_mac.h */,
+				E7E01A4E1D87CEDA00F5C13A /* asn1.h */,
+				E7E01A4F1D87CEDA00F5C13A /* asn1t.h */,
+				E7E01A501D87CEDA00F5C13A /* bio.h */,
+				E7E01A511D87CEDA00F5C13A /* blowfish.h */,
+				E7E01A521D87CEDA00F5C13A /* bn.h */,
+				E7E01A531D87CEDA00F5C13A /* buffer.h */,
+				E7E01A541D87CEDA00F5C13A /* camellia.h */,
+				E7E01A551D87CEDA00F5C13A /* cast.h */,
+				E7E01A561D87CEDA00F5C13A /* cmac.h */,
+				E7E01A571D87CEDA00F5C13A /* cms.h */,
+				E7E01A581D87CEDA00F5C13A /* comp.h */,
+				E7E01A591D87CEDA00F5C13A /* conf_api.h */,
+				E7E01A5A1D87CEDA00F5C13A /* conf.h */,
+				E7E01A5B1D87CEDA00F5C13A /* crypto.h */,
+				E7E01A5C1D87CEDA00F5C13A /* des_old.h */,
+				E7E01A5D1D87CEDA00F5C13A /* des.h */,
+				E7E01A5E1D87CEDA00F5C13A /* dh.h */,
+				E7E01A5F1D87CEDA00F5C13A /* dsa.h */,
+				E7E01A601D87CEDA00F5C13A /* dso.h */,
+				E7E01A611D87CEDA00F5C13A /* dtls1.h */,
+				E7E01A621D87CEDA00F5C13A /* e_os2.h */,
+				E7E01A631D87CEDA00F5C13A /* ebcdic.h */,
+				E7E01A641D87CEDA00F5C13A /* ec.h */,
+				E7E01A651D87CEDA00F5C13A /* ecdh.h */,
+				E7E01A661D87CEDA00F5C13A /* ecdsa.h */,
+				E7E01A671D87CEDA00F5C13A /* engine.h */,
+				E7E01A681D87CEDA00F5C13A /* err.h */,
+				E7E01A691D87CEDA00F5C13A /* evp.h */,
+				E7E01A6A1D87CEDA00F5C13A /* hmac.h */,
+				E7E01A6B1D87CEDA00F5C13A /* idea.h */,
+				E7E01A6C1D87CEDA00F5C13A /* krb5_asn.h */,
+				E7E01A6D1D87CEDA00F5C13A /* kssl.h */,
+				E7E01A6E1D87CEDA00F5C13A /* lhash.h */,
+				E7E01A6F1D87CEDA00F5C13A /* md4.h */,
+				E7E01A701D87CEDA00F5C13A /* md5.h */,
+				E7E01A711D87CEDA00F5C13A /* mdc2.h */,
+				E7E01A721D87CEDA00F5C13A /* modes.h */,
+				E7E01A731D87CEDA00F5C13A /* obj_mac.h */,
+				E7E01A741D87CEDA00F5C13A /* objects.h */,
+				E7E01A751D87CEDA00F5C13A /* ocsp.h */,
+				E7E01A761D87CEDA00F5C13A /* opensslconf.h */,
+				E7E01A771D87CEDA00F5C13A /* opensslv.h */,
+				E7E01A781D87CEDA00F5C13A /* ossl_typ.h */,
+				E7E01A791D87CEDA00F5C13A /* pem.h */,
+				E7E01A7A1D87CEDA00F5C13A /* pem2.h */,
+				E7E01A7B1D87CEDA00F5C13A /* pkcs7.h */,
+				E7E01A7C1D87CEDA00F5C13A /* pkcs12.h */,
+				E7E01A7D1D87CEDA00F5C13A /* pqueue.h */,
+				E7E01A7E1D87CEDA00F5C13A /* rand.h */,
+				E7E01A7F1D87CEDA00F5C13A /* rc2.h */,
+				E7E01A801D87CEDA00F5C13A /* rc4.h */,
+				E7E01A811D87CEDA00F5C13A /* ripemd.h */,
+				E7E01A821D87CEDA00F5C13A /* rsa.h */,
+				E7E01A831D87CEDA00F5C13A /* safestack.h */,
+				E7E01A841D87CEDA00F5C13A /* seed.h */,
+				E7E01A851D87CEDA00F5C13A /* sha.h */,
+				E7E01A861D87CEDA00F5C13A /* srp.h */,
+				E7E01A871D87CEDA00F5C13A /* srtp.h */,
+				E7E01A881D87CEDA00F5C13A /* ssl.h */,
+				E7E01A891D87CEDA00F5C13A /* ssl2.h */,
+				E7E01A8A1D87CEDA00F5C13A /* ssl3.h */,
+				E7E01A8B1D87CEDA00F5C13A /* ssl23.h */,
+				E7E01A8C1D87CEDA00F5C13A /* stack.h */,
+				E7E01A8D1D87CEDA00F5C13A /* symhacks.h */,
+				E7E01A8E1D87CEDA00F5C13A /* tls1.h */,
+				E7E01A8F1D87CEDA00F5C13A /* ts.h */,
+				E7E01A901D87CEDA00F5C13A /* txt_db.h */,
+				E7E01A911D87CEDA00F5C13A /* ui_compat.h */,
+				E7E01A921D87CEDA00F5C13A /* ui.h */,
+				E7E01A931D87CEDA00F5C13A /* whrlpool.h */,
+				E7E01A941D87CEDA00F5C13A /* x509_vfy.h */,
+				E7E01A951D87CEDA00F5C13A /* x509.h */,
+				E7E01A961D87CEDA00F5C13A /* x509v3.h */,
+			);
+			name = OpenSSL;
+			sourceTree = "<group>";
+		};
+		E7E01A1D1D87CAF700F5C13A /* RabbitMQ */ = {
+			isa = PBXGroup;
+			children = (
+				E7E01A461D87CECD00F5C13A /* amqp_framing.h */,
+				E7E01A471D87CECD00F5C13A /* amqp_ssl_socket.h */,
+				E7E01A481D87CECD00F5C13A /* amqp_tcp_socket.h */,
+				E7E01A441D87CEC400F5C13A /* amqp.h */,
+			);
+			name = RabbitMQ;
+			sourceTree = "<group>";
+		};
+		E7E01AEA1D87D04800F5C13A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E7E01AE21D87D03900F5C13A /* libcrypto-tvOS.a */,
+				E7E01AE31D87D03900F5C13A /* libcrypto.a */,
+				E7E01AE41D87D03900F5C13A /* libssl-tvOS.a */,
+				E7E01AE51D87D03900F5C13A /* libssl.a */,
+				E7E01AEB1D87D05700F5C13A /* libcrypto-tvOS.a */,
+				E7E01AEC1D87D05700F5C13A /* libcrypto.a */,
+				E7E01AED1D87D05700F5C13A /* libssl-tvOS.a */,
+				E7E01AEE1D87D05700F5C13A /* libssl.a */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +542,87 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E01AD41D87CEDA00F5C13A /* ssl2.h in Headers */,
+				E7E01ADA1D87CEDA00F5C13A /* ts.h in Headers */,
+				E7E01A9B1D87CEDA00F5C13A /* bio.h in Headers */,
+				E7E01AA51D87CEDA00F5C13A /* conf.h in Headers */,
+				E7E01A9A1D87CEDA00F5C13A /* asn1t.h in Headers */,
+				E7E01A451D87CEC400F5C13A /* amqp.h in Headers */,
+				E7E01A4A1D87CECD00F5C13A /* amqp_ssl_socket.h in Headers */,
+				E7E01AC11D87CEDA00F5C13A /* opensslconf.h in Headers */,
+				E7E01AB61D87CEDA00F5C13A /* idea.h in Headers */,
+				E7E01AA11D87CEDA00F5C13A /* cmac.h in Headers */,
+				E7E01ADC1D87CEDA00F5C13A /* ui_compat.h in Headers */,
+				E7E01AAB1D87CEDA00F5C13A /* dso.h in Headers */,
+				E7E01AC61D87CEDA00F5C13A /* pkcs7.h in Headers */,
+				E7E01A9E1D87CEDA00F5C13A /* buffer.h in Headers */,
+				E7E01AA21D87CEDA00F5C13A /* cms.h in Headers */,
+				E7E01ADB1D87CEDA00F5C13A /* txt_db.h in Headers */,
+				E7E01A491D87CECD00F5C13A /* amqp_framing.h in Headers */,
+				E7E01AD21D87CEDA00F5C13A /* srtp.h in Headers */,
+				E7E01ADD1D87CEDA00F5C13A /* ui.h in Headers */,
+				E7E01AB51D87CEDA00F5C13A /* hmac.h in Headers */,
+				E7E01ABA1D87CEDA00F5C13A /* md4.h in Headers */,
+				E7E01AB91D87CEDA00F5C13A /* lhash.h in Headers */,
+				E7E01AB31D87CEDA00F5C13A /* err.h in Headers */,
+				E7E01ACB1D87CEDA00F5C13A /* rc4.h in Headers */,
+				E7E01AC31D87CEDA00F5C13A /* ossl_typ.h in Headers */,
+				E7E01A991D87CEDA00F5C13A /* asn1.h in Headers */,
+				E7E01ABF1D87CEDA00F5C13A /* objects.h in Headers */,
+				E7E01ACA1D87CEDA00F5C13A /* rc2.h in Headers */,
+				E7E01AC01D87CEDA00F5C13A /* ocsp.h in Headers */,
+				E7E01ADE1D87CEDA00F5C13A /* whrlpool.h in Headers */,
+				E7E01AA31D87CEDA00F5C13A /* comp.h in Headers */,
+				E7E01AC21D87CEDA00F5C13A /* opensslv.h in Headers */,
+				E7E01AB11D87CEDA00F5C13A /* ecdsa.h in Headers */,
+				E7E01ABC1D87CEDA00F5C13A /* mdc2.h in Headers */,
+				E7E01AE11D87CEDA00F5C13A /* x509v3.h in Headers */,
+				E7E01AAE1D87CEDA00F5C13A /* ebcdic.h in Headers */,
+				E7E01AC41D87CEDA00F5C13A /* pem.h in Headers */,
+				E7E01AD71D87CEDA00F5C13A /* stack.h in Headers */,
+				E7E01AAA1D87CEDA00F5C13A /* dsa.h in Headers */,
+				E7E01AC51D87CEDA00F5C13A /* pem2.h in Headers */,
+				E7E01AA01D87CEDA00F5C13A /* cast.h in Headers */,
+				E7E01AB21D87CEDA00F5C13A /* engine.h in Headers */,
+				E7E01AB41D87CEDA00F5C13A /* evp.h in Headers */,
+				E7E01A981D87CEDA00F5C13A /* asn1_mac.h in Headers */,
+				E7E01AD31D87CEDA00F5C13A /* ssl.h in Headers */,
+				E7E01AB01D87CEDA00F5C13A /* ecdh.h in Headers */,
+				E7E01AC71D87CEDA00F5C13A /* pkcs12.h in Headers */,
+				E7E01AC91D87CEDA00F5C13A /* rand.h in Headers */,
+				E7E01AD91D87CEDA00F5C13A /* tls1.h in Headers */,
+				E7E01ACF1D87CEDA00F5C13A /* seed.h in Headers */,
+				E7E01AA61D87CEDA00F5C13A /* crypto.h in Headers */,
+				E7E01AE01D87CEDA00F5C13A /* x509.h in Headers */,
+				E7E01ACC1D87CEDA00F5C13A /* ripemd.h in Headers */,
+				E7E01ACE1D87CEDA00F5C13A /* safestack.h in Headers */,
+				E7E01AA91D87CEDA00F5C13A /* dh.h in Headers */,
+				E7E01AD11D87CEDA00F5C13A /* srp.h in Headers */,
+				E7E01AB81D87CEDA00F5C13A /* kssl.h in Headers */,
+				E7E01ABB1D87CEDA00F5C13A /* md5.h in Headers */,
+				E7E01AAC1D87CEDA00F5C13A /* dtls1.h in Headers */,
+				E7E01AD51D87CEDA00F5C13A /* ssl3.h in Headers */,
+				E7E01A4B1D87CECD00F5C13A /* amqp_tcp_socket.h in Headers */,
+				E7E01ABE1D87CEDA00F5C13A /* obj_mac.h in Headers */,
+				E7E01AA81D87CEDA00F5C13A /* des.h in Headers */,
+				E7E01AC81D87CEDA00F5C13A /* pqueue.h in Headers */,
+				E7E01ABD1D87CEDA00F5C13A /* modes.h in Headers */,
+				E7E01AB71D87CEDA00F5C13A /* krb5_asn.h in Headers */,
+				E7E01AAD1D87CEDA00F5C13A /* e_os2.h in Headers */,
+				E7E01AD81D87CEDA00F5C13A /* symhacks.h in Headers */,
+				E7E01ADF1D87CEDA00F5C13A /* x509_vfy.h in Headers */,
+				E7E01A9D1D87CEDA00F5C13A /* bn.h in Headers */,
+				E7E01ACD1D87CEDA00F5C13A /* rsa.h in Headers */,
+				E7E01AD01D87CEDA00F5C13A /* sha.h in Headers */,
 				48583CFB164CD1F164A76D03A1679749 /* DURabbitManager-umbrella.h in Headers */,
+				E7E01AD61D87CEDA00F5C13A /* ssl23.h in Headers */,
 				E992C60A9D441867002E91EACD6FB39E /* DURabbitManager.h in Headers */,
+				E7E01A9C1D87CEDA00F5C13A /* blowfish.h in Headers */,
+				E7E01A971D87CEDA00F5C13A /* aes.h in Headers */,
+				E7E01AAF1D87CEDA00F5C13A /* ec.h in Headers */,
+				E7E01AA71D87CEDA00F5C13A /* des_old.h in Headers */,
+				E7E01A9F1D87CEDA00F5C13A /* camellia.h in Headers */,
+				E7E01AA41D87CEDA00F5C13A /* conf_api.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,18 +907,14 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DURabbitManager/DURabbitManager-prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers/Private\"/**",
+					"\"${PODS_ROOT}/Headers/Private\"",
 					"\"${PODS_ROOT}/Headers/Public\"",
 				);
 				INFOPLIST_FILE = "Target Support Files/DURabbitManager/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"${PROJECT_DIR}/lib\"/**",
-					"$(PROJECT_DIR)/lib/openssl",
-					"$(PROJECT_DIR)/lib/rabbitmq",
-				);
+				LIBRARY_SEARCH_PATHS = "/Users/ariffikriabas/Documents/Developer/DURabbitManager/DURabbitManager/**";
 				MODULEMAP_FILE = "Target Support Files/DURabbitManager/DURabbitManager.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = DURabbitManager;
@@ -584,18 +941,14 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DURabbitManager/DURabbitManager-prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers/Private\"/**",
+					"\"${PODS_ROOT}/Headers/Private\"",
 					"\"${PODS_ROOT}/Headers/Public\"",
 				);
 				INFOPLIST_FILE = "Target Support Files/DURabbitManager/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"${PROJECT_DIR}/lib\"/**",
-					"$(PROJECT_DIR)/lib/openssl",
-					"$(PROJECT_DIR)/lib/rabbitmq",
-				);
+				LIBRARY_SEARCH_PATHS = "/Users/ariffikriabas/Documents/Developer/DURabbitManager/DURabbitManager/**";
 				MODULEMAP_FILE = "Target Support Files/DURabbitManager/DURabbitManager.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = DURabbitManager;
