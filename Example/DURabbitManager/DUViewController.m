@@ -7,8 +7,11 @@
 //
 
 #import "DUViewController.h"
+#import "DURabbitManager.h"
 
 @interface DUViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *hostServerField;
+@property (strong, nonatomic) IBOutlet UITextField *portServerField;
 
 @end
 
@@ -17,13 +20,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.hostServerField.autocorrectionType = UITextAutocorrectionTypeNo;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)connectRabbit:(id)sender {
+    [self.view endEditing:YES];
+
+    [[DURabbitManager sharedManager] setServer:self.hostServerField.text stagingServer:nil port:[self.portServerField.text integerValue]];
+
+    [[DURabbitManager sharedManager] startWithExchange:@"MY" routingKey:@"" success:^(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage) {
+        NSLog(@"JSON-Message :%@", jsonMessage);
+    } failed:^{
+        NSLog(@"Failed");
+    }];
+
+}
+
+- (IBAction)downloadApp:(UIButton *)appButton {
+    NSString *appURL = [NSString stringWithFormat:@"https://itunes.apple.com/my/app/%@", appButton.tag ? @"duriana/id720005600" : @"88motors/id1083395016"];
+
+
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appURL]];
+}
+
 
 @end

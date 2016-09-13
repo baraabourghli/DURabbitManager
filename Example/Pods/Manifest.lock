@@ -1,0 +1,16 @@
+PODS:
+  - DURabbitManager (0.1.0)
+
+DEPENDENCIES:
+  - DURabbitManager (from `../`)
+
+EXTERNAL SOURCES:
+  DURabbitManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DURabbitManager: 06e098ce8e3f8d3918c6e68a752bafc2be098ce7
+
+PODFILE CHECKSUM: 60a824ffe6ff9f356939df884aaa095be6f1b3d3
+
+COCOAPODS: 1.0.1

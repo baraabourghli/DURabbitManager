@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +14,130 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DURabbitManager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6y-Oj-frA">
+                                <rect key="frame" x="20" y="145" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://" borderStyle="roundedRect" placeholder="Rabbit MQ Server" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96G-RH-b75">
+                                <rect key="frame" x="28" y="193" width="265" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AVE-qL-W4N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Port Number (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZl-Fl-F9K">
+                                <rect key="frame" x="28" y="243" width="265" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KDi-Ml-Gor"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="download our app" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9y-4j-fbW">
+                                <rect key="frame" x="11" y="534" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="UP5-hy-qDw"/>
+                                    <constraint firstAttribute="height" constant="21" id="YcF-jk-ScR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.26232172819999999" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oh-12-OUq">
+                                <rect key="frame" x="170" y="534" width="16" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="Sqe-C9-hOF"/>
+                                    <constraint firstAttribute="height" constant="21" id="fPt-bR-EbC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.26232172819999999" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9w-XB-1qx">
+                                <rect key="frame" x="179" y="530" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="F6l-He-klD"/>
+                                    <constraint firstAttribute="height" constant="30" id="GOC-x2-TUp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <state key="normal" title="88motors"/>
+                                <connections>
+                                    <action selector="downloadApp:" destination="whP-gf-Uak" eventType="touchUpInside" id="BVW-pJ-dgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuM-TJ-1qm">
+                                <rect key="frame" x="117" y="293" width="86" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="2NC-Xf-fzO"/>
+                                    <constraint firstAttribute="height" constant="30" id="sk5-SM-T5W"/>
+                                </constraints>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="connectRabbit:" destination="whP-gf-Uak" eventType="touchUpInside" id="Edh-dQ-jcw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fif-ks-tv5">
+                                <rect key="frame" x="117" y="530" width="53" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="75i-XX-0u1"/>
+                                    <constraint firstAttribute="height" constant="30" id="BQt-PA-n5K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <state key="normal" title="Duriana"/>
+                                <connections>
+                                    <action selector="downloadApp:" destination="whP-gf-Uak" eventType="touchUpInside" id="m7Q-Sh-uhZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DurianaIcon" translatesAutoresizingMaskIntoConstraints="NO" id="H06-5X-dgm">
+                                <rect key="frame" x="111" y="36" width="98" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="boS-1U-1bB"/>
+                                    <constraint firstAttribute="height" constant="96" id="o6i-Ur-a3M"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H06-5X-dgm" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="0xP-Y5-scj"/>
+                            <constraint firstAttribute="trailing" secondItem="96G-RH-b75" secondAttribute="trailing" constant="27" id="0y9-HO-xc6"/>
+                            <constraint firstAttribute="trailing" secondItem="i6y-Oj-frA" secondAttribute="trailing" constant="20" id="56L-eH-BMg"/>
+                            <constraint firstItem="Fif-ks-tv5" firstAttribute="centerY" secondItem="C9y-4j-fbW" secondAttribute="centerY" id="7w0-Lc-4vS"/>
+                            <constraint firstItem="SuM-TJ-1qm" firstAttribute="top" secondItem="yZl-Fl-F9K" secondAttribute="bottom" constant="20" id="A7d-ZV-4JY"/>
+                            <constraint firstItem="L9w-XB-1qx" firstAttribute="centerY" secondItem="7oh-12-OUq" secondAttribute="centerY" id="D2y-kJ-vgh"/>
+                            <constraint firstItem="96G-RH-b75" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="28" id="ILu-IR-ayT"/>
+                            <constraint firstItem="C9y-4j-fbW" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="11" id="Lsm-GJ-PdT"/>
+                            <constraint firstItem="yZl-Fl-F9K" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="28" id="N1R-Ez-3z6"/>
+                            <constraint firstItem="SuM-TJ-1qm" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="U6n-zd-dtr"/>
+                            <constraint firstItem="7oh-12-OUq" firstAttribute="leading" secondItem="Fif-ks-tv5" secondAttribute="trailing" id="WB3-xb-4PY"/>
+                            <constraint firstItem="7oh-12-OUq" firstAttribute="centerY" secondItem="Fif-ks-tv5" secondAttribute="centerY" id="aa1-0h-EQf"/>
+                            <constraint firstAttribute="trailing" secondItem="yZl-Fl-F9K" secondAttribute="trailing" constant="27" id="eAT-Yp-Qbx"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="C9y-4j-fbW" secondAttribute="bottom" constant="13" id="eJB-Mw-pRS"/>
+                            <constraint firstItem="i6y-Oj-frA" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="f6V-ea-KF3"/>
+                            <constraint firstItem="L9w-XB-1qx" firstAttribute="leading" secondItem="7oh-12-OUq" secondAttribute="trailing" constant="-7" id="ji3-KQ-P9J"/>
+                            <constraint firstItem="96G-RH-b75" firstAttribute="top" secondItem="i6y-Oj-frA" secondAttribute="bottom" constant="27" id="llL-wE-c3B"/>
+                            <constraint firstItem="H06-5X-dgm" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="16" id="oHs-ei-YYF"/>
+                            <constraint firstItem="i6y-Oj-frA" firstAttribute="top" secondItem="H06-5X-dgm" secondAttribute="bottom" constant="13" id="rn1-h7-eIb"/>
+                            <constraint firstItem="Fif-ks-tv5" firstAttribute="leading" secondItem="C9y-4j-fbW" secondAttribute="trailing" constant="-4" id="xwK-ei-Ess"/>
+                            <constraint firstItem="yZl-Fl-F9K" firstAttribute="top" secondItem="96G-RH-b75" secondAttribute="bottom" constant="20" id="yKC-aC-7WN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hostServerField" destination="96G-RH-b75" id="jSt-q3-amX"/>
+                        <outlet property="portServerField" destination="yZl-Fl-F9K" id="3D4-iX-JzU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="162" y="409"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DurianaIcon" width="88" height="118"/>
+    </resources>
 </document>
