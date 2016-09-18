@@ -9,6 +9,7 @@
 #import "DURabbitManager.h"
 
 #include <amqp_ssl_socket.h>
+#include <amqp_tcp_socket.h>
 #include <amqp.h>
 #include <amqp_framing.h>
 
@@ -24,6 +25,11 @@ static const NSTimeInterval kRetryInterval                 = 1.0 * 60.0;
 static void (^errorLoggerBlock)(NSString *) = ^(NSString *log) {
     NSLog(@"Rabbit: %@", log);
 };
+
+typedef enum : NSUInteger {
+    AMQPChannelReceiver = 1,
+    AMQPChannelTransmitter,
+} AMQPChannel;
 
 static NSString *RabbitErrorString(amqp_rpc_reply_t reply, NSString *context) {
     switch (reply.reply_type) {
@@ -93,7 +99,7 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
 
 @implementation RabbitConsumer
 
-- (instancetype)initWithHostname:(NSString *)hostname port:(NSInteger)port exchange:(NSString *)exchange routingKey:(NSString *)routingKey cacertpem:(NSString *)cacertpem keypem:(NSString *)keypem certpem:(NSString *)certpem {
+- (instancetype)initWithHostname:(NSString *)hostname port:(NSInteger)port exchange:(NSString *)exchange routingKey:(NSString *)routingKey cacertpem:(NSString *)cacertpem keypem:(NSString *)keypem certpem:(NSString *)certpem username:(NSString *)username password:(NSString *)password {
     if ((self = [super init])) {
         _hostname   = hostname;
         _port       = port;
@@ -123,16 +129,22 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
 
         // setup ssl certificates
         //TO DO -
-        _socket = amqp_ssl_socket_new(_conn);
+        _socket = amqp_tcp_socket_new(_conn);
         if (!_socket) {
             errorLoggerBlock(@"Failed to create a socket");
             return nil;
         }
 
-        // set peer validation to false, we only want to verify the server, on the server we have verify_none, so no need for client verification
-        amqp_ssl_socket_set_verify_peer(_socket, false);
-
         if(_isHTTPS) {
+            _socket = amqp_ssl_socket_new(_conn);
+            if (!_socket) {
+                errorLoggerBlock(@"Failed to create a socket");
+                return nil;
+            }
+
+            // set peer validation to false, we only want to verify the server, on the server we have verify_none, so no need for client verification
+            amqp_ssl_socket_set_verify_peer(_socket, false);
+
             // set ca cert
             if (amqp_ssl_socket_set_cacert(_socket, cacertpem.UTF8String)) {
                 errorLoggerBlock(@"Failed to set CA certificate");
@@ -156,37 +168,40 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
         }
 
         // open channel
-        if (RabbitLogAMQPError(amqp_login(_conn, "/", 0, 131072, 0, AMQP_SASL_METHOD_PLAIN, "duriana", "!iloveduriana!"), @"Loggin in")) {
+        if (RabbitLogAMQPError(amqp_login(_conn, "/", 0, 131072, 0, AMQP_SASL_METHOD_PLAIN, username.UTF8String, password.UTF8String), @"Loggin in")) {
             return nil;
         }
 
-        amqp_channel_open(_conn, 1);
-        if (RabbitLogAMQPError(amqp_get_rpc_reply(_conn), @"Opening channel")) {
+        amqp_channel_open(_conn, AMQPChannelReceiver);
+        amqp_channel_open(_conn, AMQPChannelTransmitter);
+        if (RabbitLogAMQPError(amqp_get_rpc_reply(_conn), @"Opening channel 1 (Receiver)")) {
             return nil;
         }
 
         // declare exchange
         amqp_bytes_t exchange_bytes = amqp_cstring_bytes(exchangeBytes);
-        amqp_exchange_declare(_conn, 1, exchange_bytes, amqp_cstring_bytes("direct"), 0, 1, 0, 0, amqp_empty_table);
+        amqp_exchange_declare(_conn, AMQPChannelReceiver, exchange_bytes, amqp_cstring_bytes("direct"), 0, 1, 0, 0, amqp_empty_table);
+        amqp_exchange_declare(_conn, AMQPChannelTransmitter, exchange_bytes, amqp_cstring_bytes("direct"), 0, 1, 0, 0, amqp_empty_table);
         if (RabbitLogAMQPError(amqp_get_rpc_reply(_conn), @"Declaring exchange")) {
             return nil;
         }
 
         // declare a queue
-        amqp_queue_declare_ok_t *r = amqp_queue_declare(_conn, 1, amqp_empty_bytes, 0, 1, 1, 1, amqp_empty_table);
+        amqp_queue_declare_ok_t *r = amqp_queue_declare(_conn, AMQPChannelReceiver, amqp_empty_bytes, 0, 1, 1, 1, amqp_empty_table);
         if (RabbitLogAMQPError(amqp_get_rpc_reply(_conn), @"Declaring queue")) {
             return nil;
         }
 
         if (r) {
             // bind
-            amqp_queue_bind(_conn, 1, r->queue, exchange_bytes, amqp_cstring_bytes(routingKeyBytes), amqp_empty_table);
+            amqp_queue_bind(_conn, AMQPChannelReceiver, r->queue, exchange_bytes, amqp_cstring_bytes(routingKeyBytes), amqp_empty_table);
+            amqp_queue_bind(_conn, AMQPChannelTransmitter, r->queue, exchange_bytes, amqp_cstring_bytes(routingKeyBytes), amqp_empty_table);
             if (RabbitLogAMQPError(amqp_get_rpc_reply(_conn), @"Binding queue")) {
                 return nil;
             }
 
             // consume
-            amqp_basic_consume(_conn, 1, r->queue, amqp_empty_bytes, 0, 1, 0, amqp_empty_table);
+            amqp_basic_consume(_conn, AMQPChannelReceiver, r->queue, amqp_empty_bytes, 0, 1, 0, amqp_empty_table);
             if (RabbitLogAMQPError(amqp_get_rpc_reply(_conn), @"Consuming")) {
                 return nil;
             }
@@ -197,7 +212,8 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
 
 - (void)dealloc {
     if (_conn) {
-        RabbitLogAMQPError(amqp_channel_close(_conn, 1, AMQP_REPLY_SUCCESS), @"Closing channel");
+        RabbitLogAMQPError(amqp_channel_close(_conn, AMQPChannelReceiver, AMQP_REPLY_SUCCESS), @"Closing channel");
+        RabbitLogAMQPError(amqp_channel_close(_conn, AMQPChannelTransmitter, AMQP_REPLY_SUCCESS), @"Closing channel");
         RabbitLogAMQPError(amqp_connection_close(_conn, AMQP_REPLY_SUCCESS), @"Closing connection");
         RabbitLogError(amqp_destroy_connection(_conn), @"Ending connection");
     }
@@ -267,7 +283,7 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
     amqp_bytes_t routingKeyBytes = amqp_cstring_bytes(_routingKey.UTF8String);
     amqp_bytes_t messageBytes = amqp_cstring_bytes(message.UTF8String);
     struct amqp_basic_properties_t_ properties;
-    amqp_status_enum status = amqp_basic_publish(_conn, 1, exchangeBytes, routingKeyBytes, YES, immediate, &properties, messageBytes);
+    amqp_status_enum status = amqp_basic_publish(_conn, AMQPChannelTransmitter, exchangeBytes, routingKeyBytes, YES, immediate, &properties, messageBytes);
 }
 
 @end
@@ -279,6 +295,8 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
 @property (strong, nonatomic) dispatch_queue_t queue;
 @property (strong, nonatomic) NSString *routingKey;
 @property (strong, nonatomic) NSString *exchange;
+@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) NSString *password;
 @end
 
 @implementation DURabbitManager
@@ -296,17 +314,22 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
 - (instancetype)init {
     if (self = [super init]) {
         _queue = dispatch_queue_create("com.duriana.rabbitmq", DISPATCH_QUEUE_CONCURRENT);
-        _caCertPemName = @"cacertpem";
+        _username = _password = @"guest";
 
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:kSignedInStatusChangedNotification object:nil];
     }
     return self;
 }
 
-- (void)setServer:(NSString *)rabbitServer stagingServer:(NSString *)rabbitServerStaging port:(NSInteger)port {
-        _rabbitServer = rabbitServer;
-        _rabbitServerStaging = rabbitServerStaging;
-        _port = port;
+- (void)setServer:(NSString *)rabbitServer stagingServer:(NSString *)rabbitServerStaging port:(NSInteger)port username:(NSString *)username password:(NSString *)password {
+    _rabbitServer = rabbitServer;
+    _rabbitServerStaging = rabbitServerStaging;
+    _port = port;
+
+    if (username) {
+        _username = username;
+        _password = password;
+    }
 }
 
 - (void)dealloc {
@@ -318,17 +341,15 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
         self.exchange = exchange;
         self.routingKey = routingKey;
         NSString *cacertpem = [[NSBundle mainBundle] pathForResource:self.caCertPemName ofType:@"pem"];
-        RabbitConsumer *consumer = [[RabbitConsumer alloc] initWithHostname:self.enableStaging ? self.rabbitServer : self.rabbitServerStaging port:self.port exchange:exchange routingKey:routingKey cacertpem:cacertpem keypem:nil certpem:nil];
+        RabbitConsumer *consumer = [[RabbitConsumer alloc] initWithHostname:self.enableStaging ? self.rabbitServerStaging : self.rabbitServer port:self.port exchange:exchange routingKey:routingKey cacertpem:cacertpem keypem:nil certpem:nil username:self.username password:self.password];
         if (consumer) {
+            // success socket connection
+            successBlock(nil, nil, nil, @{@"status":@"200"});
             consumer.callback = ^(NSString *exchange, NSString *routingKey, NSString *type, NSData *data) {
                 NSError *error;
                 NSDictionary *jsonMessage = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
                 if (!error) {
-                    if ([type isEqualToString:@"bidding"]) {
                         successBlock(exchange, routingKey, type, jsonMessage);
-                    } else {
-                        errorLoggerBlock(_f(@"Unknown message type: %@", type));
-                    }
                 } else {
                     errorLoggerBlock(_f(@"JSON serialization error:\n%@\nmessage:\n%@", error, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]));
                 }
@@ -356,8 +377,8 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
     });
 }
 
--(void)sendMesage:(NSString *)message {
-    [self.consumer sendMessage:message immedite:NO];
+-(void)sendMesage:(NSString *)message immedite:(BOOL)immediate{
+    [self.consumer sendMessage:message immedite:immediate];
 }
 
 - (void)refresh {

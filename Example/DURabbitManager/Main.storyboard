@@ -17,28 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DURabbitManager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6y-Oj-frA">
-                                <rect key="frame" x="20" y="145" width="280" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://" borderStyle="roundedRect" placeholder="Rabbit MQ Server" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96G-RH-b75">
-                                <rect key="frame" x="28" y="193" width="265" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="AVE-qL-W4N"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Port Number (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZl-Fl-F9K">
-                                <rect key="frame" x="28" y="243" width="265" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="KDi-Ml-Gor"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="download our app" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9y-4j-fbW">
                                 <rect key="frame" x="11" y="534" width="110" height="21"/>
                                 <constraints>
@@ -71,17 +49,6 @@
                                     <action selector="downloadApp:" destination="whP-gf-Uak" eventType="touchUpInside" id="BVW-pJ-dgX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuM-TJ-1qm">
-                                <rect key="frame" x="117" y="293" width="86" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="86" id="2NC-Xf-fzO"/>
-                                    <constraint firstAttribute="height" constant="30" id="sk5-SM-T5W"/>
-                                </constraints>
-                                <state key="normal" title="Connect"/>
-                                <connections>
-                                    <action selector="connectRabbit:" destination="whP-gf-Uak" eventType="touchUpInside" id="Edh-dQ-jcw"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fif-ks-tv5">
                                 <rect key="frame" x="117" y="530" width="53" height="30"/>
                                 <constraints>
@@ -94,8 +61,41 @@
                                     <action selector="downloadApp:" destination="whP-gf-Uak" eventType="touchUpInside" id="m7Q-Sh-uhZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DURabbitManager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6y-Oj-frA">
+                                <rect key="frame" x="20" y="153" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rabbit MQ Server" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96G-RH-b75">
+                                <rect key="frame" x="28" y="201" width="265" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AVE-qL-W4N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Port Number (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZl-Fl-F9K">
+                                <rect key="frame" x="28" y="251" width="265" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KDi-Ml-Gor"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuM-TJ-1qm">
+                                <rect key="frame" x="117" y="301" width="86" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="2NC-Xf-fzO"/>
+                                    <constraint firstAttribute="height" constant="30" id="sk5-SM-T5W"/>
+                                </constraints>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="connectRabbit:" destination="whP-gf-Uak" eventType="touchUpInside" id="Edh-dQ-jcw"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DurianaIcon" translatesAutoresizingMaskIntoConstraints="NO" id="H06-5X-dgm">
-                                <rect key="frame" x="111" y="36" width="98" height="96"/>
+                                <rect key="frame" x="111" y="44" width="98" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="98" id="boS-1U-1bB"/>
                                     <constraint firstAttribute="height" constant="96" id="o6i-Ur-a3M"/>
@@ -121,20 +121,81 @@
                             <constraint firstItem="i6y-Oj-frA" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="f6V-ea-KF3"/>
                             <constraint firstItem="L9w-XB-1qx" firstAttribute="leading" secondItem="7oh-12-OUq" secondAttribute="trailing" constant="-7" id="ji3-KQ-P9J"/>
                             <constraint firstItem="96G-RH-b75" firstAttribute="top" secondItem="i6y-Oj-frA" secondAttribute="bottom" constant="27" id="llL-wE-c3B"/>
-                            <constraint firstItem="H06-5X-dgm" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="16" id="oHs-ei-YYF"/>
+                            <constraint firstItem="H06-5X-dgm" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="24" id="oHs-ei-YYF"/>
                             <constraint firstItem="i6y-Oj-frA" firstAttribute="top" secondItem="H06-5X-dgm" secondAttribute="bottom" constant="13" id="rn1-h7-eIb"/>
                             <constraint firstItem="Fif-ks-tv5" firstAttribute="leading" secondItem="C9y-4j-fbW" secondAttribute="trailing" constant="-4" id="xwK-ei-Ess"/>
                             <constraint firstItem="yZl-Fl-F9K" firstAttribute="top" secondItem="96G-RH-b75" secondAttribute="bottom" constant="20" id="yKC-aC-7WN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="G8c-Ox-IWM"/>
                     <connections>
                         <outlet property="hostServerField" destination="96G-RH-b75" id="jSt-q3-amX"/>
                         <outlet property="portServerField" destination="yZl-Fl-F9K" id="3D4-iX-JzU"/>
+                        <segue destination="jME-oa-iOK" kind="modal" identifier="startMessagingSegue" id="6G2-A3-QvB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="409"/>
+            <point key="canvasLocation" x="694" y="409"/>
+        </scene>
+        <!--Messaging Controller-->
+        <scene sceneID="Wnq-IW-lG5">
+            <objects>
+                <viewController id="jME-oa-iOK" customClass="DUMessagingController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jod-9I-Xae"/>
+                        <viewControllerLayoutGuide type="bottom" id="RZy-uN-l3M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pa0-3v-JI9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8t-ma-Jco" userLabel="messageTextField">
+                                <rect key="frame" x="20" y="304" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RP4-wW-G4z">
+                                <rect key="frame" x="196" y="340" width="102" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="jME-oa-iOK" eventType="touchUpInside" id="dOi-fk-01w"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VWh-MZ-4TB" userLabel="consoleTextView">
+                                <rect key="frame" x="20" y="40" width="280" height="224"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6p-BC-dLy">
+                                <rect key="frame" x="20" y="267" width="64" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="End">
+                                    <color key="titleColor" red="1" green="0.069132760067114093" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endSession:" destination="jME-oa-iOK" eventType="touchUpInside" id="Grn-MO-CFn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RwF-tP-ZHQ"/>
+                    <connections>
+                        <outlet property="consoleTextView" destination="VWh-MZ-4TB" id="UpQ-cq-gCP"/>
+                        <outlet property="messageTextField" destination="v8t-ma-Jco" id="hZn-oG-T0K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkY-3J-Obk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="409"/>
         </scene>
     </scenes>
     <resources>

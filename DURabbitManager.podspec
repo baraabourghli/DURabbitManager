@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DURabbitManager'
-  s.version          = '0.1.4'
+  s.version          = '1.0.0'
   s.summary          = 'An easy to use RabbitMQ integration to be used in iOS apps'
   s.description      = 'This repository contains source code of the RabbitMQ Objective C client. The client is maintained by the Duriana team at Duriana Internet.'
   s.homepage         = 'https://github.com/duriana/DURabbitManager'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DURabbitManager/Classes/**/*', 'DURabbitManager/Headers/**/*'
+  s.source_files = 'DURabbitManager/Classes/**/*'
 
   s.public_header_files = 'Pod/Headers/**/*.h'
   s.vendored_libraries = 'DURabbitManager/Library/libDURabbit.a'

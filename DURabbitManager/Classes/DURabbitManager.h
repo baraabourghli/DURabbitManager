@@ -44,7 +44,7 @@
 
 /*******************************************/
 
-- (void)setServer:(NSString *)rabbitServer stagingServer:(NSString *)rabbitServerStaging port:(NSInteger)port;
+- (void)setServer:(NSString *)rabbitServer stagingServer:(NSString *)rabbitServerStaging port:(NSInteger)port username:(NSString *)username password:(NSString *)password;
 - (void)startWithExchange:(NSString *)exchange routingKey:(NSString *)routingKey success:(void (^)(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage))successBlock failed:(void (^)(void))failedBlock;
 - (void)sendMesage:(NSString *)message immedite:(BOOL)immediate;
 - (void)stop;

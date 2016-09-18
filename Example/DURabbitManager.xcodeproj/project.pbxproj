@@ -21,8 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6F8428BAE0F1E2A1EB7B462C /* Pods_DURabbitManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C261C3587B8808613EC4F6E9 /* Pods_DURabbitManager_Tests.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A79E3B67DB146756FCEA7371 /* Pods_DURabbitManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0B22B7EFECB89A2E080A02 /* Pods_DURabbitManager_Example.framework */; };
+		E753D9D11D8ABB6D0066E2E5 /* DUMessagingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E753D9D01D8ABB6D0066E2E5 /* DUMessagingController.m */; };
+		E753D9D31D8ABE3A0066E2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E753D9D21D8ABE3A0066E2E5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +59,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8908178D993FF04B0C6E4981 /* Pods-DURabbitManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DURabbitManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DURabbitManager_Example/Pods-DURabbitManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BBFAD4EF13330D3A4211D912 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C261C3587B8808613EC4F6E9 /* Pods_DURabbitManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DURabbitManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA6C9C1E0F4E14716F89C90 /* Pods-DURabbitManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DURabbitManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DURabbitManager_Tests/Pods-DURabbitManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E753D9CF1D8ABB6D0066E2E5 /* DUMessagingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUMessagingController.h; sourceTree = "<group>"; };
+		E753D9D01D8ABB6D0066E2E5 /* DUMessagingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUMessagingController.m; sourceTree = "<group>"; };
+		E753D9D21D8ABE3A0066E2E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EE0B22B7EFECB89A2E080A02 /* Pods_DURabbitManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DURabbitManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D93E7CE6735641EA71A280 /* Pods-DURabbitManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DURabbitManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DURabbitManager_Example/Pods-DURabbitManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,11 +133,13 @@
 		6003F593195388D20070C39A /* Example for DURabbitManager */ = {
 			isa = PBXGroup;
 			children = (
+				E753D9D21D8ABE3A0066E2E5 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* DUAppDelegate.h */,
 				6003F59D195388D20070C39A /* DUAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DUViewController.h */,
 				6003F5A6195388D20070C39A /* DUViewController.m */,
+				E753D9CF1D8ABB6D0066E2E5 /* DUMessagingController.h */,
+				E753D9D01D8ABB6D0066E2E5 /* DUMessagingController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -276,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				E753D9D31D8ABE3A0066E2E5 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -392,6 +397,7 @@
 			files = (
 				6003F59E195388D20070C39A /* DUAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DUViewController.m in Sources */,
+				E753D9D11D8ABB6D0066E2E5 /* DUMessagingController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,9 +46,6 @@ DURabbitManager *rabbitManager = [DURabbitManager sharedManager];
     // connection failed  
 }];
 
-// send message via created connection
-[rabbitManager sendMesage:@"Hello World!" immedite:NO];
-
 ```
 Contributions
 ---
