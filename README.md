@@ -26,7 +26,7 @@ it simply add the following line to your Podfile:
 
 #### Source Code Method:
 
-*** Just ***drag and drop*** `DURabbitManager` directory from demo project to your project. And you can start to use.
+***Just*** drag and drop `DURabbitManager` directory from demo project to your project. And you can start to use.
 
 ### How to use
 ---
