@@ -15,8 +15,7 @@ Minimum iOS Target: iOS 8.0
 
 Minimum Xcode Version: Xcode 8.0
 
-Installation
----
+#### Installation
 
 #### Cocoapod Method:
 
@@ -29,8 +28,7 @@ it simply add the following line to your Podfile:
 
 ***DURabbitManager (Objective-C):-*** Just ***drag and drop*** `DURabbitManager` directory from demo project to your project. And you can start to use.
 
-How to use
----
+### How to use
 
 ```objc
 
@@ -65,7 +63,7 @@ DURabbitManager *rabbitManager = [DURabbitManager sharedManager];
 - The message now appears on the app, cool!
 - That's it, it was easy :)
 
-#### TODO
+### TODO
 
 - Ability to publish a message from the app, checkout https://github.com/duriana/DURabbitManager/blob/master/DURabbitManager/Classes/DURabbitManager.m#L274
 
