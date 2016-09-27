@@ -13,7 +13,6 @@
 #include <amqp.h>
 #include <amqp_framing.h>
 
-NSString *const kSignedInStatusChangedNotification  = @"com.duriana.SignInManager.signedInStatusChangedNotification";
 NSString *const kProfileRefreshCancelIdentifier     = @"com.duriana.RabbitManager.refreshCancel";
 NSString *const kRabbitBiddingMessageReceived       = @"com.duriana.RabbitBiddingMessageReceived";
 static const NSTimeInterval kRetryInterval                 = 1.0 * 60.0;
@@ -89,12 +88,6 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
 @property (copy, nonatomic) RabbitConsumerErrorCallback fatalErrorCallback;
 @property (assign, atomic) BOOL                         isConsuming;
 @property (assign, atomic) BOOL                         isHTTPS;
-
-- (instancetype)initWithHostname:(NSString *)hostname port:(NSInteger)port exchange:(NSString *)exchange routingKey:(NSString *)routingKey cacertpem:(NSString *)cacertpem keypem:(NSString *)keypem certpem:(NSString *)certpem;
-- (void)startConsuming;  // start consuming infinite loop
-- (void)stopConsuming;
--(void)sendMessage:(NSString *)message;
-
 @end
 
 @implementation RabbitConsumer
@@ -278,12 +271,13 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
     self.isConsuming = NO;
 }
 
--(void)sendMessage:(NSString *)message immedite:(BOOL)immediate{
-    amqp_bytes_t exchangeBytes = amqp_cstring_bytes(_exchange.UTF8String);
-    amqp_bytes_t routingKeyBytes = amqp_cstring_bytes(_routingKey.UTF8String);
-    amqp_bytes_t messageBytes = amqp_cstring_bytes(message.UTF8String);
-    struct amqp_basic_properties_t_ properties;
-    amqp_status_enum status = amqp_basic_publish(_conn, AMQPChannelTransmitter, exchangeBytes, routingKeyBytes, YES, immediate, &properties, messageBytes);
+- (void)sendMessage:(NSString *)message immedite:(BOOL)immediate {
+    // TODO
+//    amqp_bytes_t exchangeBytes = amqp_cstring_bytes(_exchange.UTF8String);
+//    amqp_bytes_t routingKeyBytes = amqp_cstring_bytes(_routingKey.UTF8String);
+//    amqp_bytes_t messageBytes = amqp_cstring_bytes(message.UTF8String);
+//    struct amqp_basic_properties_t_ properties;
+//    amqp_status_enum status = amqp_basic_publish(_conn, AMQPChannelTransmitter, exchangeBytes, routingKeyBytes, YES, immediate, &properties, messageBytes);
 }
 
 @end
@@ -314,9 +308,6 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
 - (instancetype)init {
     if (self = [super init]) {
         _queue = dispatch_queue_create("com.duriana.rabbitmq", DISPATCH_QUEUE_CONCURRENT);
-        _username = _password = @"guest";
-
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:kSignedInStatusChangedNotification object:nil];
     }
     return self;
 }
@@ -332,11 +323,7 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
     }
 }
 
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (void)startWithExchange:(NSString *)exchange routingKey:(NSString *)routingKey success:(void (^)(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage))successBlock failed:(void (^)(void))failedBlock {
+- (void)startConsumingWithExchange:(NSString *)exchange routingKey:(NSString *)routingKey success:(void (^)(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage))successBlock failed:(void (^)(void))failedBlock {
     dispatch_async(self.queue, ^{
         self.exchange = exchange;
         self.routingKey = routingKey;
@@ -377,7 +364,32 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
     });
 }
 
--(void)sendMesage:(NSString *)message immedite:(BOOL)immediate{
+- (void)pauseConsuming {
+    @synchronized(self) {
+        [self.consumer stopConsuming];
+    }
+}
+
+- (void)resumeConsuming {
+    dispatch_async(self.queue, ^{
+        [self.consumer startConsuming];
+    });
+}
+
+- (void)stopConsuming {
+    @synchronized(self) {
+        [self pauseConsuming];
+        self.consumer = nil;
+    }
+}
+
+- (BOOL)isConsuming {
+    @synchronized(self) {
+        return self.consumer.isConsuming;
+    }
+}
+
+- (void)sendMesage:(NSString *)message immedite:(BOOL)immediate{
     [self.consumer sendMessage:message immedite:immediate];
 }
 
@@ -392,39 +404,14 @@ typedef void (^RabbitConsumerErrorCallback)(amqp_rpc_reply_t res);
         }
 
         if (![routingKey isEqualToString:self.routingKey] || !isConsuming) {
-            [self startWithExchange:self.exchange routingKey:self.routingKey success:^(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage) {
-                
+            [self startConsumingWithExchange:self.exchange routingKey:self.routingKey success:^(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage) {
+
             } failed:^{
                 [self refresh];
             }];
         }
     } else {
-        [self stop];
-    }
-}
-
-- (void)pauseConsuming {
-    @synchronized(self) {
-        [self.consumer stopConsuming];
-    }
-}
-
-- (void)resumeConsuming {
-    dispatch_async(self.queue, ^{
-        [self.consumer startConsuming];
-    });
-}
-
-- (void)stop {
-    @synchronized(self) {
-        [self pauseConsuming];
-        self.consumer = nil;
-    }
-}
-
-- (BOOL)isConsuming {
-    @synchronized(self) {
-        return self.consumer.isConsuming;
+        [self stopConsuming];
     }
 }
 

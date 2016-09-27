@@ -9,7 +9,5 @@
 @import UIKit;
 
 @interface DUAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
 @end

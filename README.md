@@ -1,7 +1,7 @@
 # DURabbitManager
 An easy to use RabbitMQ integration to be used in iOS apps
 
-This repository contains source code of the RabbitMQ Objective C client. The client is maintained by the Duriana team at Duriana Internet.
+This repository contains source code of the RabbitMQ Objective-C client. The client is maintained by the Duriana team at Duriana Internet.
 
 ## Requirements
 [![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue.svg?style=fla)]()
@@ -13,7 +13,7 @@ Minimum iOS Target: iOS 8.0
 
 #### Demo Project:-
 
-Minimum Xcode Version: Xcode 7.3
+Minimum Xcode Version: Xcode 8.0
 
 Installation
 ---
@@ -40,10 +40,10 @@ DURabbitManager *rabbitManager = [DURabbitManager sharedManager];
 [rabbitManager setServer:@"localhost" stagingServer:@"localhost" port:8080];
 
 //  start connection
-[rabbitManager startWithExchange:@"" routingKey:@"hello" success:^(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage) {
+[rabbitManager startWithExchange:@"MY" routingKey:@"123" success:^(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage) {
     // connection succeed, receive message in this block
     } failed:^{
-    // connection failed  
+    // connection failed
 }];
 
 ```

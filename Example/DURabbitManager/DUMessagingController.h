@@ -6,8 +6,6 @@
 //  Copyright © 2016 iamariffikri@hotmail.com. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface DUMessagingController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextView *consoleTextView;
 @end

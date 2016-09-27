@@ -11,8 +11,8 @@
 #import "DURabbitManager.h"
 
 @interface DUViewController ()
-@property (strong, nonatomic) IBOutlet UITextField *hostServerField;
-@property (strong, nonatomic) IBOutlet UITextField *portServerField;
+@property (weak, nonatomic) IBOutlet UITextField *hostServerField;
+@property (weak, nonatomic) IBOutlet UITextField *portServerField;
 @property (strong, nonatomic) DUMessagingController *messagingController;
 @end
 
@@ -23,19 +23,18 @@
     self.hostServerField.autocorrectionType = UITextAutocorrectionTypeNo;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 - (IBAction)connectRabbit:(id)sender {
     [self.view endEditing:YES];
 
-    [[DURabbitManager sharedManager] setServer:self.hostServerField.text stagingServer:nil port:[self.portServerField.text integerValue] username:nil password:nil];
+    [[DURabbitManager sharedManager] setServer:self.hostServerField.text
+                                 stagingServer:nil
+                                          port:[self.portServerField.text integerValue]
+                                      username:@"guest"
+                                      password:@"guest"];
 
-    [[DURabbitManager sharedManager] startWithExchange:@"MY" routingKey:@"" success:^(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage) {
-        NSLog(@"JSON-Message :%@", jsonMessage);
+    [[DURabbitManager sharedManager] startConsumingWithExchange:@"MY" routingKey:@"123" success:^(NSString *exchange, NSString *routingKey, NSString *type, NSDictionary *jsonMessage) {
+        NSLog(@"Rabbit: Message recieved %@", jsonMessage);
 
-        // success connection
         if([[jsonMessage valueForKey:@"status"] intValue] == 200) {
             [self performSegueWithIdentifier:@"startMessagingSegue" sender:self];
         }
@@ -45,7 +44,7 @@
             [self scrollTextViewToBottom:self.messagingController.consoleTextView];
         });
     } failed:^{
-        NSLog(@"Failed");
+        NSLog(@"Rabbit: Connection Failed");
     }];
 }
 

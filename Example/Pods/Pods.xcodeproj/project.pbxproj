@@ -7,286 +7,231 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0315081E21EE7FBA66B81ED2996771D5 /* Pods-DURabbitManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE2FB3C90020CEA94F3740628B71795 /* Pods-DURabbitManager_Example-dummy.m */; };
-		0C581B628AA7B71161099D14901EB6F2 /* Pods-DURabbitManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6674DC0F727FE539E927EF5B23AA186E /* Pods-DURabbitManager_Tests-dummy.m */; };
-		48583CFB164CD1F164A76D03A1679749 /* DURabbitManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86750FDCC7D47A4E656D1B93A8031F78 /* DURabbitManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		491BB22805644DDDB067FA2F6FCE9F49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		492311AB74087EF1FCFAF33E22704994 /* DURabbitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CAC6980D5C55E0C3914D754FD2D9AF /* DURabbitManager.m */; };
-		602DE3346DCFB607EE88559E45E969DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6CE9185A6197A8A2997BB03AF340D45B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		A0F32E0BD4AE08873F8209A87D3DD489 /* DURabbitManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A17212ADD4DE1CD3A0E0FF50945954B0 /* DURabbitManager-dummy.m */; };
-		E753CE05F40897B9B8AF6B398FCB9127 /* Pods-DURabbitManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B924AC88D8C4EBB9744826AD244D1D7B /* Pods-DURabbitManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E753D9C81D8AA6980066E2E5 /* libDURabbit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E753D9C71D8AA6980066E2E5 /* libDURabbit.a */; };
-		E7D40CE21D8FBE2100FCD637 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C971D8FBE2100FCD637 /* aes.h */; };
-		E7D40CE31D8FBE2100FCD637 /* asn1_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C981D8FBE2100FCD637 /* asn1_mac.h */; };
-		E7D40CE41D8FBE2100FCD637 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C991D8FBE2100FCD637 /* asn1.h */; };
-		E7D40CE51D8FBE2100FCD637 /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C9A1D8FBE2100FCD637 /* asn1t.h */; };
-		E7D40CE61D8FBE2100FCD637 /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C9B1D8FBE2100FCD637 /* bio.h */; };
-		E7D40CE71D8FBE2100FCD637 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C9C1D8FBE2100FCD637 /* blowfish.h */; };
-		E7D40CE81D8FBE2100FCD637 /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C9D1D8FBE2100FCD637 /* bn.h */; };
-		E7D40CE91D8FBE2100FCD637 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C9E1D8FBE2100FCD637 /* buffer.h */; };
-		E7D40CEA1D8FBE2100FCD637 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40C9F1D8FBE2100FCD637 /* camellia.h */; };
-		E7D40CEB1D8FBE2100FCD637 /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA01D8FBE2100FCD637 /* cast.h */; };
-		E7D40CEC1D8FBE2100FCD637 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA11D8FBE2100FCD637 /* cmac.h */; };
-		E7D40CED1D8FBE2100FCD637 /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA21D8FBE2100FCD637 /* cms.h */; };
-		E7D40CEE1D8FBE2100FCD637 /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA31D8FBE2100FCD637 /* comp.h */; };
-		E7D40CEF1D8FBE2100FCD637 /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA41D8FBE2100FCD637 /* conf_api.h */; };
-		E7D40CF01D8FBE2100FCD637 /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA51D8FBE2100FCD637 /* conf.h */; };
-		E7D40CF11D8FBE2100FCD637 /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA61D8FBE2100FCD637 /* crypto.h */; };
-		E7D40CF21D8FBE2100FCD637 /* des_old.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA71D8FBE2100FCD637 /* des_old.h */; };
-		E7D40CF31D8FBE2100FCD637 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA81D8FBE2100FCD637 /* des.h */; };
-		E7D40CF41D8FBE2100FCD637 /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CA91D8FBE2100FCD637 /* dh.h */; };
-		E7D40CF51D8FBE2100FCD637 /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CAA1D8FBE2100FCD637 /* dsa.h */; };
-		E7D40CF61D8FBE2100FCD637 /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CAB1D8FBE2100FCD637 /* dso.h */; };
-		E7D40CF71D8FBE2100FCD637 /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CAC1D8FBE2100FCD637 /* dtls1.h */; };
-		E7D40CF81D8FBE2100FCD637 /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CAD1D8FBE2100FCD637 /* e_os2.h */; };
-		E7D40CF91D8FBE2100FCD637 /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CAE1D8FBE2100FCD637 /* ebcdic.h */; };
-		E7D40CFA1D8FBE2100FCD637 /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CAF1D8FBE2100FCD637 /* ec.h */; };
-		E7D40CFB1D8FBE2100FCD637 /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB01D8FBE2100FCD637 /* ecdh.h */; };
-		E7D40CFC1D8FBE2100FCD637 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB11D8FBE2100FCD637 /* ecdsa.h */; };
-		E7D40CFD1D8FBE2100FCD637 /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB21D8FBE2100FCD637 /* engine.h */; };
-		E7D40CFE1D8FBE2100FCD637 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB31D8FBE2100FCD637 /* err.h */; };
-		E7D40CFF1D8FBE2100FCD637 /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB41D8FBE2100FCD637 /* evp.h */; };
-		E7D40D001D8FBE2100FCD637 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB51D8FBE2100FCD637 /* hmac.h */; };
-		E7D40D011D8FBE2100FCD637 /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB61D8FBE2100FCD637 /* idea.h */; };
-		E7D40D021D8FBE2100FCD637 /* krb5_asn.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB71D8FBE2100FCD637 /* krb5_asn.h */; };
-		E7D40D031D8FBE2100FCD637 /* kssl.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB81D8FBE2100FCD637 /* kssl.h */; };
-		E7D40D041D8FBE2100FCD637 /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CB91D8FBE2100FCD637 /* lhash.h */; };
-		E7D40D051D8FBE2100FCD637 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CBA1D8FBE2100FCD637 /* md4.h */; };
-		E7D40D061D8FBE2100FCD637 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CBB1D8FBE2100FCD637 /* md5.h */; };
-		E7D40D071D8FBE2100FCD637 /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CBC1D8FBE2100FCD637 /* mdc2.h */; };
-		E7D40D081D8FBE2100FCD637 /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CBD1D8FBE2100FCD637 /* modes.h */; };
-		E7D40D091D8FBE2100FCD637 /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CBE1D8FBE2100FCD637 /* obj_mac.h */; };
-		E7D40D0A1D8FBE2100FCD637 /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CBF1D8FBE2100FCD637 /* objects.h */; };
-		E7D40D0B1D8FBE2100FCD637 /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC01D8FBE2100FCD637 /* ocsp.h */; };
-		E7D40D0C1D8FBE2100FCD637 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC11D8FBE2100FCD637 /* opensslconf.h */; };
-		E7D40D0D1D8FBE2100FCD637 /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC21D8FBE2100FCD637 /* opensslv.h */; };
-		E7D40D0E1D8FBE2100FCD637 /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC31D8FBE2100FCD637 /* ossl_typ.h */; };
-		E7D40D0F1D8FBE2100FCD637 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC41D8FBE2100FCD637 /* pem.h */; };
-		E7D40D101D8FBE2100FCD637 /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC51D8FBE2100FCD637 /* pem2.h */; };
-		E7D40D111D8FBE2100FCD637 /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC61D8FBE2100FCD637 /* pkcs7.h */; };
-		E7D40D121D8FBE2100FCD637 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC71D8FBE2100FCD637 /* pkcs12.h */; };
-		E7D40D131D8FBE2100FCD637 /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC81D8FBE2100FCD637 /* pqueue.h */; };
-		E7D40D141D8FBE2100FCD637 /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CC91D8FBE2100FCD637 /* rand.h */; };
-		E7D40D151D8FBE2100FCD637 /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CCA1D8FBE2100FCD637 /* rc2.h */; };
-		E7D40D161D8FBE2100FCD637 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CCB1D8FBE2100FCD637 /* rc4.h */; };
-		E7D40D171D8FBE2100FCD637 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CCC1D8FBE2100FCD637 /* ripemd.h */; };
-		E7D40D181D8FBE2100FCD637 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CCD1D8FBE2100FCD637 /* rsa.h */; };
-		E7D40D191D8FBE2100FCD637 /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CCE1D8FBE2100FCD637 /* safestack.h */; };
-		E7D40D1A1D8FBE2100FCD637 /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CCF1D8FBE2100FCD637 /* seed.h */; };
-		E7D40D1B1D8FBE2100FCD637 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD01D8FBE2100FCD637 /* sha.h */; };
-		E7D40D1C1D8FBE2100FCD637 /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD11D8FBE2100FCD637 /* srp.h */; };
-		E7D40D1D1D8FBE2100FCD637 /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD21D8FBE2100FCD637 /* srtp.h */; };
-		E7D40D1E1D8FBE2100FCD637 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD31D8FBE2100FCD637 /* ssl.h */; };
-		E7D40D1F1D8FBE2100FCD637 /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD41D8FBE2100FCD637 /* ssl2.h */; };
-		E7D40D201D8FBE2100FCD637 /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD51D8FBE2100FCD637 /* ssl3.h */; };
-		E7D40D211D8FBE2100FCD637 /* ssl23.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD61D8FBE2100FCD637 /* ssl23.h */; };
-		E7D40D221D8FBE2100FCD637 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD71D8FBE2100FCD637 /* stack.h */; };
-		E7D40D231D8FBE2100FCD637 /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD81D8FBE2100FCD637 /* symhacks.h */; };
-		E7D40D241D8FBE2100FCD637 /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CD91D8FBE2100FCD637 /* tls1.h */; };
-		E7D40D251D8FBE2100FCD637 /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CDA1D8FBE2100FCD637 /* ts.h */; };
-		E7D40D261D8FBE2100FCD637 /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CDB1D8FBE2100FCD637 /* txt_db.h */; };
-		E7D40D271D8FBE2100FCD637 /* ui_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CDC1D8FBE2100FCD637 /* ui_compat.h */; };
-		E7D40D281D8FBE2100FCD637 /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CDD1D8FBE2100FCD637 /* ui.h */; };
-		E7D40D291D8FBE2100FCD637 /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CDE1D8FBE2100FCD637 /* whrlpool.h */; };
-		E7D40D2A1D8FBE2100FCD637 /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CDF1D8FBE2100FCD637 /* x509_vfy.h */; };
-		E7D40D2B1D8FBE2100FCD637 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CE01D8FBE2100FCD637 /* x509.h */; };
-		E7D40D2C1D8FBE2100FCD637 /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40CE11D8FBE2100FCD637 /* x509v3.h */; };
-		E7D40D311D8FBE2900FCD637 /* amqp_framing.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40D2D1D8FBE2900FCD637 /* amqp_framing.h */; };
-		E7D40D321D8FBE2900FCD637 /* amqp_ssl_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40D2E1D8FBE2900FCD637 /* amqp_ssl_socket.h */; };
-		E7D40D331D8FBE2900FCD637 /* amqp_tcp_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40D2F1D8FBE2900FCD637 /* amqp_tcp_socket.h */; };
-		E7D40D341D8FBE2900FCD637 /* amqp.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D40D301D8FBE2900FCD637 /* amqp.h */; };
-		E992C60A9D441867002E91EACD6FB39E /* DURabbitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E06B45507BB7F6F0110DC6A728741B /* DURabbitManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F64FD7FE1683925D04402B8F9186CDF0 /* Pods-DURabbitManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B90EE1F271EFAEF5A601ED13A8C78705 /* Pods-DURabbitManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01E33CAC99E91920EFD56573BD1C21B3 /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E789609B4CAF15BF91732075069F56 /* seed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038289D5466095FF4869DCCBFC6EB71E /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 699118D7DDD5F335E4FB8B17DC0F12D2 /* Pods-Example-dummy.m */; };
+		07291E3722B4B6F89E3EB9392039DF4A /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B1F6EAB89FFCABEA46A59748375D17 /* cast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089437399F8FA465237F9C27DCCF0D14 /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9627E71F26446E433736EFDBD834F9A2 /* modes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AE5D6F5F870CD69B756407F91EC5DAF /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = C64D94E2050769A6EEBC09E0EBD75D4B /* ts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B505FE2647379D7E492E121E71DC77F /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 182A5F8A864350438894029F193A46F4 /* x509_vfy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14CE1B262676E0F782CED57144B7BFF0 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 6615F1652C318FA1CD9731C3EB8506D3 /* ecdsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		167A03AFE187E49A9DAAC22B089A9AD0 /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = 9632DE07CDA7C5723B5C71BE0F6F61F2 /* pem2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		167E0326C762D33359295DA0DF6FAF27 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C61FC9E4F3E16991D8D07F696D7D41 /* cmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18159AC4086D607869C092484280D01A /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = 10406534AAFFF9055E77F701902C79FB /* ssl3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		187E5C40B0492AE5BE4DED7920B61AAD /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 54B1E7037273FBCE033FA4A20E16AC8A /* safestack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B0CC13FA74251D328B6528944CA75B9 /* kssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB5EF180716AE9A2E92C58EE8085526 /* kssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F234C3C483AE3FBB717B4643B35E2F8 /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = AE15658C57813D0684E234FD1D10173D /* dsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24B105E3D1B4621B2BC13E2E95E94406 /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3856A68E2E24A3526D20CF009CCCDF28 /* conf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E379329DD8C8F6415D021E780A820C /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = A36F88E49DC63DC83218E9917B2C1424 /* symhacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B269552AC22C1648286D4E0995ADC5C /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D6377220D1547B9A3316BB1C287B52 /* engine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31CCE6A1D74D282420AD2933AE8297D0 /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 550C8E000C0BC6F265FC8F071B636528 /* dtls1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3556614FF9911A1681014747FC3DE856 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D67BA65724B0D4B1B99DBE563A7EAC /* opensslconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E0D076FCD76ECDD539362229D789598 /* DURabbitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F412C870BDD7DECB5EDE4C4565D81 /* DURabbitManager.m */; };
+		3EED22D3FA35082C46D56FEABBF8F44B /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = F180896C46FF97BCF06C6CCEAC48B64D /* ec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45B32A8CD3D033B63669CF58A921701F /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF67D07FE67C74E309C4DAF38212986 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4779F26CCF9D8B4FC3BEF5FF3571E43E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4B56AB7AAEF369EEF7A3E7E8118C4488 /* ssl23.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC012B6F0FDCD9880D6CF623EACF7BB /* ssl23.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C61E7963E0F4FE2C08A5569AE3720EA /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 684575D9DB05CDA23805A4186BF3B61E /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5186F762E47DFA5813A7A2AEC682B7EB /* ui_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = E5379304660894C050E0B7A05AC28493 /* ui_compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52618100C048959037AB568CC28DE390 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 225743D8F44EDEA2D3449B47ACA77CAE /* rsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53ADF78419CD7649B245BFDC1C709755 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0122D997155754A5865DA6B885CA67C7 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		599936A9EBE80DB3FA16D65CFC1053FF /* DURabbitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 65E18C75E11ECE774539BACF39A0C81F /* DURabbitManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6435E393AF5C61CE37CAAABAC9A7D861 /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = D66D6463BEF513FBCA6B5154D0C3C162 /* e_os2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6690ADD1625862B888E1533707402B84 /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = A807CD930C90AC466F28187C72DBEEB7 /* cms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6861041D89FFFD5C53B0251265FF07A0 /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 60340D4776DBCFA74DA95ED91357E54E /* crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DC091E65B11A3CAE89E9AE5B2E2EA3D /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E8F28C842DAA7264344DB8D5BB520E /* bio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D7AA461A138DBC3DBB2F35607E0BB4 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 381513E8B3FD0A31A0118EAAE56E5067 /* asn1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71C6951E4EFB1BA93093B3219B019869 /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 36254FC0752B6FBE36B1EDD0AE6615C4 /* comp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72088ED6FB6261D652D9FDA33A5313FE /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF1CBCE43FC6718A1FEAA8FC36B2F3F /* ecdh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B8D8D6824EB93C3B021A690E5EFC86 /* amqp.h in Headers */ = {isa = PBXBuildFile; fileRef = 00970658F0B60FBB4968EF97F87ECB9A /* amqp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76503DE486C3FF02F87C9B0E7ED11B7A /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3B9FE351BD4885B520E5919F0D3AAF /* pqueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78E2214F4CD8754BA91847FF7C24E3F6 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9BDE82371C83FA9AE91B05F77ACAA36 /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E4D90DB363C203BF597966E256D5294 /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EBA2928A9AF4166057F0D81DE823C5F /* pkcs7.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		813644FB342E28BFE8A1DFD8ADE95D42 /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BF882467B6B67C5476870966E103D1 /* tls1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84404EB6FF5416D918F1D08CEFEFA213 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 7840EA7BDAF11F97EBACA5484DB1FE09 /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88647A146F2F4843741B8CD57EB8CEBB /* krb5_asn.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D26CCF4B18F90DD6395EE9E859E374 /* krb5_asn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9177357A0B36C7A491F41AEBF27E7118 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		98A5E34793BE0B78A5840A2AAE224D5F /* DURabbitManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4968E64FD54C2A1DF961007F3E8F91CC /* DURabbitManager-dummy.m */; };
+		A08E30AAADAD8910919963F6D8E57CE1 /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BE0F3FC744F673E2A9958BF3C2C9C52 /* ebcdic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1998BDE27FA201673FEE6292B64161E /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA8317FA7F7A81F1037856C53037E15 /* x509v3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A457F0A214B0B6BDB75573930FC5A5CF /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A4A8BDAF4342613F1345F6E82A8AB0 /* srp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6433C0F2AAF0B3A01E15DEA2F5E70A9 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 53588F301C26E9E5C5D61B34EB56129C /* rc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8601C421555DFECCCD9F8F27BF11080 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 5362C15B5438BB572C9217ED275D71D1 /* hmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A86D663E5A61BF5CD63DF435AE6ED200 /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D1928346076212C00A7A50FE4F529F /* dh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A954288332EF33B4FA998983839760EF /* amqp_framing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA55A1964F98532153EBDE4F76FE4FE /* amqp_framing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAA94FF38841C0A840808181CBEA053C /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = BFED6BEA375C0EE14D037B72BFA6C2AA /* evp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD9AB1B8E3DFE5E3626815F79C4E71E7 /* asn1_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A178997DC2742066BF3C4B8DC8F4BF /* asn1_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0B08FC8B0F6989E09282D9EFB81C14A /* DURabbitManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61C1375DDF3DC49CACB99E58C2CC4592 /* DURabbitManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6F4AC45C9CCE060639AAB84F044A2A3 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = C946791F23F26977EDFFDE5B54D90304 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1C9F9DEAD428D7D9945AD078C58974 /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2168CE810DC999A859FF0F604B8224 /* ossl_typ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA794105FC0FD296985B14A619CCB432 /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = DD689E6A349DA04ADAEE09D574CE8935 /* srtp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB0E4E0F87F375D93CB8EDEC0DBB9AED /* amqp_tcp_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0612CF008CB84D9E4A63B5296AACA667 /* amqp_tcp_socket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC1185B4F1FCC8A1EE0F4FA73EB20CF7 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC8B66839FF1878CC18FC68D4793FCF /* err.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2774AA419875DB217FEE3785D830770 /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = E43D0401C86C70DD1FE01572481E4779 /* dso.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C456D3166E2791B4BA7226D485F5CF7F /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4635B4821C24F02893E66E110EB59913 /* pem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C62AB42D4AF455B9714AE011BD9476E5 /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F76036403D3B418F01CCE09464FD6D0 /* bn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C658637CDB6CC15A3B0823D993E08ED2 /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 841087FBB33B3D8F5D82CADC747EC9AC /* whrlpool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C68F17CB9CCE1D224356967871429BB1 /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = EACC088BF8C309AA9ECBF4F83D4C4908 /* mdc2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C87E19B4F6175E2D9E2B92C996FFBB66 /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 105DB58551B64EEA11D66804FB77DDDB /* ui.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAEDBD62946FD8647E8D4B24FAEEF5CD /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = C382F3D585806DA3F9B1168A21AF8D20 /* ssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC4788BBC47985D3D8FF2BEE53F93241 /* des_old.h in Headers */ = {isa = PBXBuildFile; fileRef = A576831F24AEFA71B9CF46222D8A2D25 /* des_old.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF89AAAABCBA92A899E2546EEA33BB71 /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = F800C1EF005D187E5112ECA8B29A44A1 /* ssl2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1805655BE6CB93510A95F37A8E680B9 /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 67CCF0DB381D1B80D7BD8123C9BF712A /* ocsp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3B6472337BA9C23E89C7C98BA75B960 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D08F71C5E5C53D571DF60A3522C48 /* x509.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D53F721836A37AF2767C5D851F587C26 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = 6387713B1B86C4BAF81DA3AD0D7B8143 /* ripemd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D59D36F5FBEEA141EBC9801F5F02152E /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0654227F8FB073DECC1429545245AC /* conf_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6E0F19A86CD3483043ACA2AACA6C427 /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C551DACA78CB26DE9DE02350B11E79 /* obj_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6E4EF8E0A482443A18652B09448CE52 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 955EDE6D50BC4F5B9FC789615E8897A3 /* md4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D83A5A3AAD4EBD08DAEC1F55B6FB28D2 /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = AF5D36EE735E96146BF68EAF58B4A008 /* txt_db.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA59DA54350CC61FBC25FEE761087BC1 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 892179DEC1B1E89A53F7FDAFA31814B6 /* pkcs12.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA7A6C0A9FF491D99B1F64D394BD52F1 /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 3760300CF50EDB7361D7ED24FAFC6334 /* rand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA3AD00BB1D4BBAC5E165D397CBBEC1 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DF7C66F852FA40EA5C112543C1248 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC083EA96D372BC6B7E7B56033B09D3 /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A0DD623527C59FA73C9D20A2EAAD0A /* opensslv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3CB6BC8AD9032F6E9BF0B8C48F0328D /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9A37CB4F9D0856FF0E8B82BE6982BD /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D8162235B2EA57FBF9BB5CFF0FB213 /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0912FCF74D356EF4A5A0B89DFF932F /* objects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8A4C0DCBA413E6C3991C0B1A9D4B9B9 /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = DDC6C152233F2FF25CC7A316E8BCDF2F /* lhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDDF7AE3501AAEEB39F29766DE613B80 /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BAE021A1E33041884E3B91FAFA54BB2 /* rc2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F05884077FA7A640776C5DF432D0451D /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1468C5AC9362C53235A4293E62CC10 /* asn1t.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6AA81849B7727C5D9D358080E14BB30 /* libDURabbit.a in Sources */ = {isa = PBXBuildFile; fileRef = 807222D7DE4467F307671B5EE29174FD /* libDURabbit.a */; };
+		F848D719682C0FD2BBE561DEC5230E09 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 9536F344ADC19DE934DFD4CDBFF50504 /* sha.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F90B66532C5592118F9CB168DE98AC80 /* amqp_ssl_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC297C4F878B642214D5D1F97F15436 /* amqp_ssl_socket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA5F34958EAE6F426E438EB26747F263 /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = C6EA6FEEFA81EFA59CD3386735D4C665 /* idea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2BFD17366B95471C682EE8F22AB1D77E /* PBXContainerItemProxy */ = {
+		B4E2895FF7ADAA7E9D4895B9E533E807 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 12A9710FC448B2DF887238B59C63AD2F;
+			remoteGlobalIDString = 7E6C8FD40B340705B168F846ABD6126D;
 			remoteInfo = DURabbitManager;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0123297DFB88BC84D6076E0E78BE0D38 /* Pods_DURabbitManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DURabbitManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DC332FA5BC306C8A63ACC272E6C55C5 /* Pods-DURabbitManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DURabbitManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		224EB88098CB84B818D5DCFB4767F2C9 /* Pods-DURabbitManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DURabbitManager_Tests-resources.sh"; sourceTree = "<group>"; };
-		25153F086DF1A769BA80CF65301B93D7 /* Pods-DURabbitManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DURabbitManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2E0DBCC3F13D4D0B53FC0D27678901AE /* Pods-DURabbitManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DURabbitManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3D2CAD2C418111879CC55C3A8C106B92 /* Pods_DURabbitManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DURabbitManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4848C145E5A68BD2349BC275A425B71B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D4BBC01A522A5680D4A4393231FA5AC /* Pods-DURabbitManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DURabbitManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		56B5DD56ADCACE197DD325163CB29E98 /* Pods-DURabbitManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DURabbitManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5D44CC1242684EA6D1200C53C17A4E64 /* Pods-DURabbitManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DURabbitManager_Example.modulemap"; sourceTree = "<group>"; };
-		6674DC0F727FE539E927EF5B23AA186E /* Pods-DURabbitManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DURabbitManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		71047049A55E76F92A2E8DF18F49F3E7 /* Pods-DURabbitManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DURabbitManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		770E0DAF764CFDD4D84FA54DAFDB0B10 /* Pods-DURabbitManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DURabbitManager_Example-resources.sh"; sourceTree = "<group>"; };
-		80D7F9368DD6E83BCBB76220A96CA677 /* Pods-DURabbitManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DURabbitManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		85064C89A7AE78D5FCFB370A01D97EA4 /* Pods-DURabbitManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DURabbitManager_Tests.modulemap"; sourceTree = "<group>"; };
-		86750FDCC7D47A4E656D1B93A8031F78 /* DURabbitManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DURabbitManager-umbrella.h"; sourceTree = "<group>"; };
+		00970658F0B60FBB4968EF97F87ECB9A /* amqp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = amqp.h; sourceTree = "<group>"; };
+		0122D997155754A5865DA6B885CA67C7 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		01E6907CF2644EB1CF8E23F708A3DA0B /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
+		02D6377220D1547B9A3316BB1C287B52 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		042D08F71C5E5C53D571DF60A3522C48 /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		0612CF008CB84D9E4A63B5296AACA667 /* amqp_tcp_socket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = amqp_tcp_socket.h; sourceTree = "<group>"; };
+		10406534AAFFF9055E77F701902C79FB /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		105DB58551B64EEA11D66804FB77DDDB /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		10BF882467B6B67C5476870966E103D1 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		10DE6561D7488FD689400DB38686140A /* DURabbitManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DURabbitManager.xcconfig; sourceTree = "<group>"; };
+		119072C64A19799964E1620D83F514FB /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		11A4A8BDAF4342613F1345F6E82A8AB0 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		13D67BA65724B0D4B1B99DBE563A7EAC /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		182A5F8A864350438894029F193A46F4 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		1BAE021A1E33041884E3B91FAFA54BB2 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		1C52B2B113ADCD84BFA6E69A7333B448 /* DURabbitManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DURabbitManager.modulemap; sourceTree = "<group>"; };
+		225743D8F44EDEA2D3449B47ACA77CAE /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		2BA55A1964F98532153EBDE4F76FE4FE /* amqp_framing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = amqp_framing.h; sourceTree = "<group>"; };
+		2E0F412C870BDD7DECB5EDE4C4565D81 /* DURabbitManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DURabbitManager.m; sourceTree = "<group>"; };
+		36254FC0752B6FBE36B1EDD0AE6615C4 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		369D9BA9401C908112F61EA4E998FDAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3760300CF50EDB7361D7ED24FAFC6334 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		381513E8B3FD0A31A0118EAAE56E5067 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		3856A68E2E24A3526D20CF009CCCDF28 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		3BC8B66839FF1878CC18FC68D4793FCF /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		4635B4821C24F02893E66E110EB59913 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		4968E64FD54C2A1DF961007F3E8F91CC /* DURabbitManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DURabbitManager-dummy.m"; sourceTree = "<group>"; };
+		4BA8317FA7F7A81F1037856C53037E15 /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		4BC012B6F0FDCD9880D6CF623EACF7BB /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		4BF67D07FE67C74E309C4DAF38212986 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		53588F301C26E9E5C5D61B34EB56129C /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		5362C15B5438BB572C9217ED275D71D1 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		54B1E7037273FBCE033FA4A20E16AC8A /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		550C8E000C0BC6F265FC8F071B636528 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		552550F3F912264E5D073F8893691F88 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		58C551DACA78CB26DE9DE02350B11E79 /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		5EBA2928A9AF4166057F0D81DE823C5F /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		60340D4776DBCFA74DA95ED91357E54E /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		60CBDA7371E1AE0E3388F1E472D555E5 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C1375DDF3DC49CACB99E58C2CC4592 /* DURabbitManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DURabbitManager-umbrella.h"; sourceTree = "<group>"; };
+		6387713B1B86C4BAF81DA3AD0D7B8143 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		65E18C75E11ECE774539BACF39A0C81F /* DURabbitManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DURabbitManager.h; sourceTree = "<group>"; };
+		6615F1652C318FA1CD9731C3EB8506D3 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		67CCF0DB381D1B80D7BD8123C9BF712A /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		684575D9DB05CDA23805A4186BF3B61E /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		699118D7DDD5F335E4FB8B17DC0F12D2 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
+		6BE0F3FC744F673E2A9958BF3C2C9C52 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		6DB5EF180716AE9A2E92C58EE8085526 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		764D33E23CE6C1111110B04F5CBADADB /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7840EA7BDAF11F97EBACA5484DB1FE09 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		7B2168CE810DC999A859FF0F604B8224 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		7DC297C4F878B642214D5D1F97F15436 /* amqp_ssl_socket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = amqp_ssl_socket.h; sourceTree = "<group>"; };
+		807222D7DE4467F307671B5EE29174FD /* libDURabbit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libDURabbit.a; sourceTree = "<group>"; };
+		841087FBB33B3D8F5D82CADC747EC9AC /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		892179DEC1B1E89A53F7FDAFA31814B6 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		969E5762D8B23213913334E45FE7763A /* Pods-DURabbitManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DURabbitManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		97E7482DC1926946B24708E08AD5DCEF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A17212ADD4DE1CD3A0E0FF50945954B0 /* DURabbitManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DURabbitManager-dummy.m"; sourceTree = "<group>"; };
-		A58DBAEDC5AFA1F8CA20FEB49122AF59 /* Pods-DURabbitManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DURabbitManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B90EE1F271EFAEF5A601ED13A8C78705 /* Pods-DURabbitManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DURabbitManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B924AC88D8C4EBB9744826AD244D1D7B /* Pods-DURabbitManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DURabbitManager_Example-umbrella.h"; sourceTree = "<group>"; };
-		BCE2FB3C90020CEA94F3740628B71795 /* Pods-DURabbitManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DURabbitManager_Example-dummy.m"; sourceTree = "<group>"; };
-		C05421544078BE4FA5B6EE31F0D6E2C4 /* DURabbitManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DURabbitManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8CAC6980D5C55E0C3914D754FD2D9AF /* DURabbitManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DURabbitManager.m; sourceTree = "<group>"; };
-		CA2E4BA59147275A822114A25A71499F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAB1D817CCD3FA2EA89AF98672177BFC /* DURabbitManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DURabbitManager-prefix.pch"; sourceTree = "<group>"; };
+		9536F344ADC19DE934DFD4CDBFF50504 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		955EDE6D50BC4F5B9FC789615E8897A3 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		9627E71F26446E433736EFDBD834F9A2 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		9632DE07CDA7C5723B5C71BE0F6F61F2 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		98C61FC9E4F3E16991D8D07F696D7D41 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		9B0912FCF74D356EF4A5A0B89DFF932F /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		9F76036403D3B418F01CCE09464FD6D0 /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		A36F88E49DC63DC83218E9917B2C1424 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		A576831F24AEFA71B9CF46222D8A2D25 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		A661FECCEBFF9D01869EE3B29C4C1EFF /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7D26CCF4B18F90DD6395EE9E859E374 /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		A807CD930C90AC466F28187C72DBEEB7 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		A8A0DD623527C59FA73C9D20A2EAAD0A /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		AC1468C5AC9362C53235A4293E62CC10 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		AE15658C57813D0684E234FD1D10173D /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		AF5D36EE735E96146BF68EAF58B4A008 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		B55205F775299457ABB1E106D9D436EA /* DURabbitManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DURabbitManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF1CBCE43FC6718A1FEAA8FC36B2F3F /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		BFED6BEA375C0EE14D037B72BFA6C2AA /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		C382F3D585806DA3F9B1168A21AF8D20 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		C64D94E2050769A6EEBC09E0EBD75D4B /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		C6EA6FEEFA81EFA59CD3386735D4C665 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		C946791F23F26977EDFFDE5B54D90304 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		C9BDE82371C83FA9AE91B05F77ACAA36 /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		C9E8F28C842DAA7264344DB8D5BB520E /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		CD9A37CB4F9D0856FF0E8B82BE6982BD /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC8CD20A78FB72AFAEF81985383A6697 /* DURabbitManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DURabbitManager.modulemap; sourceTree = "<group>"; };
-		E753D9C71D8AA6980066E2E5 /* libDURabbit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDURabbit.a; path = ../../DURabbitManager/Library/libDURabbit.a; sourceTree = "<group>"; };
-		E7D40C971D8FBE2100FCD637 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aes.h; path = Headers/openssl/aes.h; sourceTree = "<group>"; };
-		E7D40C981D8FBE2100FCD637 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = Headers/openssl/asn1_mac.h; sourceTree = "<group>"; };
-		E7D40C991D8FBE2100FCD637 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = Headers/openssl/asn1.h; sourceTree = "<group>"; };
-		E7D40C9A1D8FBE2100FCD637 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = Headers/openssl/asn1t.h; sourceTree = "<group>"; };
-		E7D40C9B1D8FBE2100FCD637 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bio.h; path = Headers/openssl/bio.h; sourceTree = "<group>"; };
-		E7D40C9C1D8FBE2100FCD637 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = Headers/openssl/blowfish.h; sourceTree = "<group>"; };
-		E7D40C9D1D8FBE2100FCD637 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bn.h; path = Headers/openssl/bn.h; sourceTree = "<group>"; };
-		E7D40C9E1D8FBE2100FCD637 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = Headers/openssl/buffer.h; sourceTree = "<group>"; };
-		E7D40C9F1D8FBE2100FCD637 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = Headers/openssl/camellia.h; sourceTree = "<group>"; };
-		E7D40CA01D8FBE2100FCD637 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cast.h; path = Headers/openssl/cast.h; sourceTree = "<group>"; };
-		E7D40CA11D8FBE2100FCD637 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = Headers/openssl/cmac.h; sourceTree = "<group>"; };
-		E7D40CA21D8FBE2100FCD637 /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cms.h; path = Headers/openssl/cms.h; sourceTree = "<group>"; };
-		E7D40CA31D8FBE2100FCD637 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = comp.h; path = Headers/openssl/comp.h; sourceTree = "<group>"; };
-		E7D40CA41D8FBE2100FCD637 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = Headers/openssl/conf_api.h; sourceTree = "<group>"; };
-		E7D40CA51D8FBE2100FCD637 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conf.h; path = Headers/openssl/conf.h; sourceTree = "<group>"; };
-		E7D40CA61D8FBE2100FCD637 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = Headers/openssl/crypto.h; sourceTree = "<group>"; };
-		E7D40CA71D8FBE2100FCD637 /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = Headers/openssl/des_old.h; sourceTree = "<group>"; };
-		E7D40CA81D8FBE2100FCD637 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des.h; path = Headers/openssl/des.h; sourceTree = "<group>"; };
-		E7D40CA91D8FBE2100FCD637 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dh.h; path = Headers/openssl/dh.h; sourceTree = "<group>"; };
-		E7D40CAA1D8FBE2100FCD637 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = Headers/openssl/dsa.h; sourceTree = "<group>"; };
-		E7D40CAB1D8FBE2100FCD637 /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dso.h; path = Headers/openssl/dso.h; sourceTree = "<group>"; };
-		E7D40CAC1D8FBE2100FCD637 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = Headers/openssl/dtls1.h; sourceTree = "<group>"; };
-		E7D40CAD1D8FBE2100FCD637 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = Headers/openssl/e_os2.h; sourceTree = "<group>"; };
-		E7D40CAE1D8FBE2100FCD637 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = Headers/openssl/ebcdic.h; sourceTree = "<group>"; };
-		E7D40CAF1D8FBE2100FCD637 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ec.h; path = Headers/openssl/ec.h; sourceTree = "<group>"; };
-		E7D40CB01D8FBE2100FCD637 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = Headers/openssl/ecdh.h; sourceTree = "<group>"; };
-		E7D40CB11D8FBE2100FCD637 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = Headers/openssl/ecdsa.h; sourceTree = "<group>"; };
-		E7D40CB21D8FBE2100FCD637 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = engine.h; path = Headers/openssl/engine.h; sourceTree = "<group>"; };
-		E7D40CB31D8FBE2100FCD637 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = err.h; path = Headers/openssl/err.h; sourceTree = "<group>"; };
-		E7D40CB41D8FBE2100FCD637 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = evp.h; path = Headers/openssl/evp.h; sourceTree = "<group>"; };
-		E7D40CB51D8FBE2100FCD637 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = Headers/openssl/hmac.h; sourceTree = "<group>"; };
-		E7D40CB61D8FBE2100FCD637 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = idea.h; path = Headers/openssl/idea.h; sourceTree = "<group>"; };
-		E7D40CB71D8FBE2100FCD637 /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = Headers/openssl/krb5_asn.h; sourceTree = "<group>"; };
-		E7D40CB81D8FBE2100FCD637 /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = Headers/openssl/kssl.h; sourceTree = "<group>"; };
-		E7D40CB91D8FBE2100FCD637 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = Headers/openssl/lhash.h; sourceTree = "<group>"; };
-		E7D40CBA1D8FBE2100FCD637 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md4.h; path = Headers/openssl/md4.h; sourceTree = "<group>"; };
-		E7D40CBB1D8FBE2100FCD637 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = Headers/openssl/md5.h; sourceTree = "<group>"; };
-		E7D40CBC1D8FBE2100FCD637 /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = Headers/openssl/mdc2.h; sourceTree = "<group>"; };
-		E7D40CBD1D8FBE2100FCD637 /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modes.h; path = Headers/openssl/modes.h; sourceTree = "<group>"; };
-		E7D40CBE1D8FBE2100FCD637 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = Headers/openssl/obj_mac.h; sourceTree = "<group>"; };
-		E7D40CBF1D8FBE2100FCD637 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = objects.h; path = Headers/openssl/objects.h; sourceTree = "<group>"; };
-		E7D40CC01D8FBE2100FCD637 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = Headers/openssl/ocsp.h; sourceTree = "<group>"; };
-		E7D40CC11D8FBE2100FCD637 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = Headers/openssl/opensslconf.h; sourceTree = "<group>"; };
-		E7D40CC21D8FBE2100FCD637 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = Headers/openssl/opensslv.h; sourceTree = "<group>"; };
-		E7D40CC31D8FBE2100FCD637 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = Headers/openssl/ossl_typ.h; sourceTree = "<group>"; };
-		E7D40CC41D8FBE2100FCD637 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem.h; path = Headers/openssl/pem.h; sourceTree = "<group>"; };
-		E7D40CC51D8FBE2100FCD637 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = Headers/openssl/pem2.h; sourceTree = "<group>"; };
-		E7D40CC61D8FBE2100FCD637 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = Headers/openssl/pkcs7.h; sourceTree = "<group>"; };
-		E7D40CC71D8FBE2100FCD637 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = Headers/openssl/pkcs12.h; sourceTree = "<group>"; };
-		E7D40CC81D8FBE2100FCD637 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = Headers/openssl/pqueue.h; sourceTree = "<group>"; };
-		E7D40CC91D8FBE2100FCD637 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rand.h; path = Headers/openssl/rand.h; sourceTree = "<group>"; };
-		E7D40CCA1D8FBE2100FCD637 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = Headers/openssl/rc2.h; sourceTree = "<group>"; };
-		E7D40CCB1D8FBE2100FCD637 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = Headers/openssl/rc4.h; sourceTree = "<group>"; };
-		E7D40CCC1D8FBE2100FCD637 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = Headers/openssl/ripemd.h; sourceTree = "<group>"; };
-		E7D40CCD1D8FBE2100FCD637 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = Headers/openssl/rsa.h; sourceTree = "<group>"; };
-		E7D40CCE1D8FBE2100FCD637 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = Headers/openssl/safestack.h; sourceTree = "<group>"; };
-		E7D40CCF1D8FBE2100FCD637 /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = seed.h; path = Headers/openssl/seed.h; sourceTree = "<group>"; };
-		E7D40CD01D8FBE2100FCD637 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha.h; path = Headers/openssl/sha.h; sourceTree = "<group>"; };
-		E7D40CD11D8FBE2100FCD637 /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srp.h; path = Headers/openssl/srp.h; sourceTree = "<group>"; };
-		E7D40CD21D8FBE2100FCD637 /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = Headers/openssl/srtp.h; sourceTree = "<group>"; };
-		E7D40CD31D8FBE2100FCD637 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = Headers/openssl/ssl.h; sourceTree = "<group>"; };
-		E7D40CD41D8FBE2100FCD637 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = Headers/openssl/ssl2.h; sourceTree = "<group>"; };
-		E7D40CD51D8FBE2100FCD637 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = Headers/openssl/ssl3.h; sourceTree = "<group>"; };
-		E7D40CD61D8FBE2100FCD637 /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = Headers/openssl/ssl23.h; sourceTree = "<group>"; };
-		E7D40CD71D8FBE2100FCD637 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = Headers/openssl/stack.h; sourceTree = "<group>"; };
-		E7D40CD81D8FBE2100FCD637 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = Headers/openssl/symhacks.h; sourceTree = "<group>"; };
-		E7D40CD91D8FBE2100FCD637 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = Headers/openssl/tls1.h; sourceTree = "<group>"; };
-		E7D40CDA1D8FBE2100FCD637 /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ts.h; path = Headers/openssl/ts.h; sourceTree = "<group>"; };
-		E7D40CDB1D8FBE2100FCD637 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = Headers/openssl/txt_db.h; sourceTree = "<group>"; };
-		E7D40CDC1D8FBE2100FCD637 /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = Headers/openssl/ui_compat.h; sourceTree = "<group>"; };
-		E7D40CDD1D8FBE2100FCD637 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui.h; path = Headers/openssl/ui.h; sourceTree = "<group>"; };
-		E7D40CDE1D8FBE2100FCD637 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = Headers/openssl/whrlpool.h; sourceTree = "<group>"; };
-		E7D40CDF1D8FBE2100FCD637 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = Headers/openssl/x509_vfy.h; sourceTree = "<group>"; };
-		E7D40CE01D8FBE2100FCD637 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509.h; path = Headers/openssl/x509.h; sourceTree = "<group>"; };
-		E7D40CE11D8FBE2100FCD637 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = Headers/openssl/x509v3.h; sourceTree = "<group>"; };
-		E7D40D2D1D8FBE2900FCD637 /* amqp_framing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amqp_framing.h; path = Headers/rabbitmq/amqp_framing.h; sourceTree = "<group>"; };
-		E7D40D2E1D8FBE2900FCD637 /* amqp_ssl_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amqp_ssl_socket.h; path = Headers/rabbitmq/amqp_ssl_socket.h; sourceTree = "<group>"; };
-		E7D40D2F1D8FBE2900FCD637 /* amqp_tcp_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amqp_tcp_socket.h; path = Headers/rabbitmq/amqp_tcp_socket.h; sourceTree = "<group>"; };
-		E7D40D301D8FBE2900FCD637 /* amqp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = amqp.h; path = Headers/rabbitmq/amqp.h; sourceTree = "<group>"; };
-		E9E06B45507BB7F6F0110DC6A728741B /* DURabbitManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DURabbitManager.h; sourceTree = "<group>"; };
-		F004B496F776BF5546BE46DBED6BA4F8 /* Pods-DURabbitManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DURabbitManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F0F8B7E7C30C96BDA05CBA302293C0DA /* DURabbitManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DURabbitManager.xcconfig; sourceTree = "<group>"; };
+		D4D1928346076212C00A7A50FE4F529F /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		D66D6463BEF513FBCA6B5154D0C3C162 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		DC0654227F8FB073DECC1429545245AC /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		DD689E6A349DA04ADAEE09D574CE8935 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		DDC6C152233F2FF25CC7A316E8BCDF2F /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		E1B1F6EAB89FFCABEA46A59748375D17 /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		E2A178997DC2742066BF3C4B8DC8F4BF /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		E43D0401C86C70DD1FE01572481E4779 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		E512A5F985F876750237FD237C3AEEDA /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		E5379304660894C050E0B7A05AC28493 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		EA3B9FE351BD4885B520E5919F0D3AAF /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		EACC088BF8C309AA9ECBF4F83D4C4908 /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		EFFB74AAA6B2AE8DABF0E88E61E09178 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F180896C46FF97BCF06C6CCEAC48B64D /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		F3E789609B4CAF15BF91732075069F56 /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		F800C1EF005D187E5112ECA8B29A44A1 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		FA14C954EAB47F0DC8FE76F6726FD121 /* DURabbitManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DURabbitManager-prefix.pch"; sourceTree = "<group>"; };
+		FA6DF7C66F852FA40EA5C112543C1248 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		01D0877F611129553A9A5E40190A878C /* Frameworks */ = {
+		14A15DFAEC877B5FE14B7145E6C2D6AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				491BB22805644DDDB067FA2F6FCE9F49 /* Foundation.framework in Frameworks */,
+				9177357A0B36C7A491F41AEBF27E7118 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ADFCE21735290EC0EDD3DB4634EA096 /* Frameworks */ = {
+		F4561244813FC1AE094F339693143CC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E753D9C81D8AA6980066E2E5 /* libDURabbit.a in Frameworks */,
-				602DE3346DCFB607EE88559E45E969DC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0F72C28B6915E6DA450E9F964896787 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CE9185A6197A8A2997BB03AF340D45B /* Foundation.framework in Frameworks */,
+				4779F26CCF9D8B4FC3BEF5FF3571E43E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0187BBD409A67D764DFDEE77BC2304F4 /* DURabbitManager */ = {
-			isa = PBXGroup;
-			children = (
-				5A72CAE7FB528E797510379678894541 /* Classes */,
-				339C0FBB2A06083FF09BA5AFD698E1EB /* Support Files */,
-			);
-			path = DURabbitManager;
-			sourceTree = "<group>";
-		};
-		1D7FD6FDD6174CAD2CA09EF21DB03327 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				46ECC78CAA4D22E61FBA932294ABAC00 /* Pods-DURabbitManager_Example */,
-				B5005F2E3D56A602E1C4B2DC756D755B /* Pods-DURabbitManager_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		339C0FBB2A06083FF09BA5AFD698E1EB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DC8CD20A78FB72AFAEF81985383A6697 /* DURabbitManager.modulemap */,
-				F0F8B7E7C30C96BDA05CBA302293C0DA /* DURabbitManager.xcconfig */,
-				A17212ADD4DE1CD3A0E0FF50945954B0 /* DURabbitManager-dummy.m */,
-				CAB1D817CCD3FA2EA89AF98672177BFC /* DURabbitManager-prefix.pch */,
-				86750FDCC7D47A4E656D1B93A8031F78 /* DURabbitManager-umbrella.h */,
-				97E7482DC1926946B24708E08AD5DCEF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Example/Pods/Target Support Files/DURabbitManager";
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,302 +240,338 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		46ECC78CAA4D22E61FBA932294ABAC00 /* Pods-DURabbitManager_Example */ = {
+		417149D6DFD76E13764942138BAFEE37 /* rabbitmq */ = {
 			isa = PBXGroup;
 			children = (
-				4848C145E5A68BD2349BC275A425B71B /* Info.plist */,
-				5D44CC1242684EA6D1200C53C17A4E64 /* Pods-DURabbitManager_Example.modulemap */,
-				0DC332FA5BC306C8A63ACC272E6C55C5 /* Pods-DURabbitManager_Example-acknowledgements.markdown */,
-				F004B496F776BF5546BE46DBED6BA4F8 /* Pods-DURabbitManager_Example-acknowledgements.plist */,
-				BCE2FB3C90020CEA94F3740628B71795 /* Pods-DURabbitManager_Example-dummy.m */,
-				A58DBAEDC5AFA1F8CA20FEB49122AF59 /* Pods-DURabbitManager_Example-frameworks.sh */,
-				770E0DAF764CFDD4D84FA54DAFDB0B10 /* Pods-DURabbitManager_Example-resources.sh */,
-				B924AC88D8C4EBB9744826AD244D1D7B /* Pods-DURabbitManager_Example-umbrella.h */,
-				71047049A55E76F92A2E8DF18F49F3E7 /* Pods-DURabbitManager_Example.debug.xcconfig */,
-				2E0DBCC3F13D4D0B53FC0D27678901AE /* Pods-DURabbitManager_Example.release.xcconfig */,
+				00970658F0B60FBB4968EF97F87ECB9A /* amqp.h */,
+				2BA55A1964F98532153EBDE4F76FE4FE /* amqp_framing.h */,
+				7DC297C4F878B642214D5D1F97F15436 /* amqp_ssl_socket.h */,
+				0612CF008CB84D9E4A63B5296AACA667 /* amqp_tcp_socket.h */,
 			);
-			name = "Pods-DURabbitManager_Example";
-			path = "Target Support Files/Pods-DURabbitManager_Example";
+			path = rabbitmq;
 			sourceTree = "<group>";
 		};
-		5A72CAE7FB528E797510379678894541 /* Classes */ = {
+		5351B296A3CB6047E8414C6582829062 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E7D40C961D8FBE1000FCD637 /* Headers */,
-				E9E06B45507BB7F6F0110DC6A728741B /* DURabbitManager.h */,
-				C8CAC6980D5C55E0C3914D754FD2D9AF /* DURabbitManager.m */,
+				65E18C75E11ECE774539BACF39A0C81F /* DURabbitManager.h */,
+				2E0F412C870BDD7DECB5EDE4C4565D81 /* DURabbitManager.m */,
+				84DFF3D868D6A757037AF93B7FB62A04 /* Headers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		5EF27F0A059EE65C0A51343277C83F1C /* DURabbitManager */ = {
+		6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0187BBD409A67D764DFDEE77BC2304F4 /* DURabbitManager */,
+				FE9811ABEB5931E154211FCA14B78350 /* Pods-Example */,
 			);
-			name = DURabbitManager;
-			path = ../..;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8DB5BF3E5BF7F663C4D14C00BDE3EF5C /* Development Pods */,
+				FDB6B85716D829C99E6FC552027275B2 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D94B2BC90807124D4C6D8900B73C5F94 /* Products */,
-				1D7FD6FDD6174CAD2CA09EF21DB03327 /* Targets Support Files */,
+				E940DA9F87D957513E8888C8A4834110 /* Products */,
+				6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8DB5BF3E5BF7F663C4D14C00BDE3EF5C /* Development Pods */ = {
+		84DFF3D868D6A757037AF93B7FB62A04 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				5EF27F0A059EE65C0A51343277C83F1C /* DURabbitManager */,
+				BDD974E9F60A082E3A52500539BEF585 /* openssl */,
+				417149D6DFD76E13764942138BAFEE37 /* rabbitmq */,
 			);
-			name = "Development Pods";
+			path = Headers;
 			sourceTree = "<group>";
 		};
-		B5005F2E3D56A602E1C4B2DC756D755B /* Pods-DURabbitManager_Tests */ = {
+		9DDF3B56C21E9A611A115F4C1F377C18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA2E4BA59147275A822114A25A71499F /* Info.plist */,
-				85064C89A7AE78D5FCFB370A01D97EA4 /* Pods-DURabbitManager_Tests.modulemap */,
-				80D7F9368DD6E83BCBB76220A96CA677 /* Pods-DURabbitManager_Tests-acknowledgements.markdown */,
-				25153F086DF1A769BA80CF65301B93D7 /* Pods-DURabbitManager_Tests-acknowledgements.plist */,
-				6674DC0F727FE539E927EF5B23AA186E /* Pods-DURabbitManager_Tests-dummy.m */,
-				969E5762D8B23213913334E45FE7763A /* Pods-DURabbitManager_Tests-frameworks.sh */,
-				224EB88098CB84B818D5DCFB4767F2C9 /* Pods-DURabbitManager_Tests-resources.sh */,
-				B90EE1F271EFAEF5A601ED13A8C78705 /* Pods-DURabbitManager_Tests-umbrella.h */,
-				4D4BBC01A522A5680D4A4393231FA5AC /* Pods-DURabbitManager_Tests.debug.xcconfig */,
-				56B5DD56ADCACE197DD325163CB29E98 /* Pods-DURabbitManager_Tests.release.xcconfig */,
 			);
-			name = "Pods-DURabbitManager_Tests";
-			path = "Target Support Files/Pods-DURabbitManager_Tests";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A059CD56CB2981ACCAF77415CAF96B8D /* DURabbitManager */ = {
+			isa = PBXGroup;
+			children = (
+				B53091719714F0D1FF4ED1530D71938A /* DURabbitManager */,
+				9DDF3B56C21E9A611A115F4C1F377C18 /* Frameworks */,
+				ABDCD900FE5819C62704E06873315098 /* Support Files */,
+			);
+			name = DURabbitManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		ABDCD900FE5819C62704E06873315098 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C52B2B113ADCD84BFA6E69A7333B448 /* DURabbitManager.modulemap */,
+				10DE6561D7488FD689400DB38686140A /* DURabbitManager.xcconfig */,
+				4968E64FD54C2A1DF961007F3E8F91CC /* DURabbitManager-dummy.m */,
+				FA14C954EAB47F0DC8FE76F6726FD121 /* DURabbitManager-prefix.pch */,
+				61C1375DDF3DC49CACB99E58C2CC4592 /* DURabbitManager-umbrella.h */,
+				369D9BA9401C908112F61EA4E998FDAB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DURabbitManager";
+			sourceTree = "<group>";
+		};
+		B53091719714F0D1FF4ED1530D71938A /* DURabbitManager */ = {
+			isa = PBXGroup;
+			children = (
+				5351B296A3CB6047E8414C6582829062 /* Classes */,
+				CCA034F7F0AAC19EDDB5E22FCFC239C0 /* Library */,
+			);
+			path = DURabbitManager;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E753D9C71D8AA6980066E2E5 /* libDURabbit.a */,
 				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D94B2BC90807124D4C6D8900B73C5F94 /* Products */ = {
+		BDD974E9F60A082E3A52500539BEF585 /* openssl */ = {
 			isa = PBXGroup;
 			children = (
-				C05421544078BE4FA5B6EE31F0D6E2C4 /* DURabbitManager.framework */,
-				3D2CAD2C418111879CC55C3A8C106B92 /* Pods_DURabbitManager_Example.framework */,
-				0123297DFB88BC84D6076E0E78BE0D38 /* Pods_DURabbitManager_Tests.framework */,
+				CD9A37CB4F9D0856FF0E8B82BE6982BD /* aes.h */,
+				381513E8B3FD0A31A0118EAAE56E5067 /* asn1.h */,
+				E2A178997DC2742066BF3C4B8DC8F4BF /* asn1_mac.h */,
+				AC1468C5AC9362C53235A4293E62CC10 /* asn1t.h */,
+				C9E8F28C842DAA7264344DB8D5BB520E /* bio.h */,
+				7840EA7BDAF11F97EBACA5484DB1FE09 /* blowfish.h */,
+				9F76036403D3B418F01CCE09464FD6D0 /* bn.h */,
+				0122D997155754A5865DA6B885CA67C7 /* buffer.h */,
+				684575D9DB05CDA23805A4186BF3B61E /* camellia.h */,
+				E1B1F6EAB89FFCABEA46A59748375D17 /* cast.h */,
+				98C61FC9E4F3E16991D8D07F696D7D41 /* cmac.h */,
+				A807CD930C90AC466F28187C72DBEEB7 /* cms.h */,
+				36254FC0752B6FBE36B1EDD0AE6615C4 /* comp.h */,
+				3856A68E2E24A3526D20CF009CCCDF28 /* conf.h */,
+				DC0654227F8FB073DECC1429545245AC /* conf_api.h */,
+				60340D4776DBCFA74DA95ED91357E54E /* crypto.h */,
+				4BF67D07FE67C74E309C4DAF38212986 /* des.h */,
+				A576831F24AEFA71B9CF46222D8A2D25 /* des_old.h */,
+				D4D1928346076212C00A7A50FE4F529F /* dh.h */,
+				AE15658C57813D0684E234FD1D10173D /* dsa.h */,
+				E43D0401C86C70DD1FE01572481E4779 /* dso.h */,
+				550C8E000C0BC6F265FC8F071B636528 /* dtls1.h */,
+				D66D6463BEF513FBCA6B5154D0C3C162 /* e_os2.h */,
+				6BE0F3FC744F673E2A9958BF3C2C9C52 /* ebcdic.h */,
+				F180896C46FF97BCF06C6CCEAC48B64D /* ec.h */,
+				BCF1CBCE43FC6718A1FEAA8FC36B2F3F /* ecdh.h */,
+				6615F1652C318FA1CD9731C3EB8506D3 /* ecdsa.h */,
+				02D6377220D1547B9A3316BB1C287B52 /* engine.h */,
+				3BC8B66839FF1878CC18FC68D4793FCF /* err.h */,
+				BFED6BEA375C0EE14D037B72BFA6C2AA /* evp.h */,
+				5362C15B5438BB572C9217ED275D71D1 /* hmac.h */,
+				C6EA6FEEFA81EFA59CD3386735D4C665 /* idea.h */,
+				A7D26CCF4B18F90DD6395EE9E859E374 /* krb5_asn.h */,
+				6DB5EF180716AE9A2E92C58EE8085526 /* kssl.h */,
+				DDC6C152233F2FF25CC7A316E8BCDF2F /* lhash.h */,
+				955EDE6D50BC4F5B9FC789615E8897A3 /* md4.h */,
+				FA6DF7C66F852FA40EA5C112543C1248 /* md5.h */,
+				EACC088BF8C309AA9ECBF4F83D4C4908 /* mdc2.h */,
+				9627E71F26446E433736EFDBD834F9A2 /* modes.h */,
+				58C551DACA78CB26DE9DE02350B11E79 /* obj_mac.h */,
+				9B0912FCF74D356EF4A5A0B89DFF932F /* objects.h */,
+				67CCF0DB381D1B80D7BD8123C9BF712A /* ocsp.h */,
+				13D67BA65724B0D4B1B99DBE563A7EAC /* opensslconf.h */,
+				A8A0DD623527C59FA73C9D20A2EAAD0A /* opensslv.h */,
+				7B2168CE810DC999A859FF0F604B8224 /* ossl_typ.h */,
+				4635B4821C24F02893E66E110EB59913 /* pem.h */,
+				9632DE07CDA7C5723B5C71BE0F6F61F2 /* pem2.h */,
+				892179DEC1B1E89A53F7FDAFA31814B6 /* pkcs12.h */,
+				5EBA2928A9AF4166057F0D81DE823C5F /* pkcs7.h */,
+				EA3B9FE351BD4885B520E5919F0D3AAF /* pqueue.h */,
+				3760300CF50EDB7361D7ED24FAFC6334 /* rand.h */,
+				1BAE021A1E33041884E3B91FAFA54BB2 /* rc2.h */,
+				53588F301C26E9E5C5D61B34EB56129C /* rc4.h */,
+				6387713B1B86C4BAF81DA3AD0D7B8143 /* ripemd.h */,
+				225743D8F44EDEA2D3449B47ACA77CAE /* rsa.h */,
+				54B1E7037273FBCE033FA4A20E16AC8A /* safestack.h */,
+				F3E789609B4CAF15BF91732075069F56 /* seed.h */,
+				9536F344ADC19DE934DFD4CDBFF50504 /* sha.h */,
+				11A4A8BDAF4342613F1345F6E82A8AB0 /* srp.h */,
+				DD689E6A349DA04ADAEE09D574CE8935 /* srtp.h */,
+				C382F3D585806DA3F9B1168A21AF8D20 /* ssl.h */,
+				F800C1EF005D187E5112ECA8B29A44A1 /* ssl2.h */,
+				4BC012B6F0FDCD9880D6CF623EACF7BB /* ssl23.h */,
+				10406534AAFFF9055E77F701902C79FB /* ssl3.h */,
+				C946791F23F26977EDFFDE5B54D90304 /* stack.h */,
+				A36F88E49DC63DC83218E9917B2C1424 /* symhacks.h */,
+				10BF882467B6B67C5476870966E103D1 /* tls1.h */,
+				C64D94E2050769A6EEBC09E0EBD75D4B /* ts.h */,
+				AF5D36EE735E96146BF68EAF58B4A008 /* txt_db.h */,
+				105DB58551B64EEA11D66804FB77DDDB /* ui.h */,
+				E5379304660894C050E0B7A05AC28493 /* ui_compat.h */,
+				841087FBB33B3D8F5D82CADC747EC9AC /* whrlpool.h */,
+				042D08F71C5E5C53D571DF60A3522C48 /* x509.h */,
+				182A5F8A864350438894029F193A46F4 /* x509_vfy.h */,
+				4BA8317FA7F7A81F1037856C53037E15 /* x509v3.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		CCA034F7F0AAC19EDDB5E22FCFC239C0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				807222D7DE4467F307671B5EE29174FD /* libDURabbit.a */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		E940DA9F87D957513E8888C8A4834110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B55205F775299457ABB1E106D9D436EA /* DURabbitManager.framework */,
+				60CBDA7371E1AE0E3388F1E472D555E5 /* Pods_Example.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7D40C961D8FBE1000FCD637 /* Headers */ = {
+		FDB6B85716D829C99E6FC552027275B2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E7D40D2D1D8FBE2900FCD637 /* amqp_framing.h */,
-				E7D40D2E1D8FBE2900FCD637 /* amqp_ssl_socket.h */,
-				E7D40D2F1D8FBE2900FCD637 /* amqp_tcp_socket.h */,
-				E7D40D301D8FBE2900FCD637 /* amqp.h */,
-				E7D40C971D8FBE2100FCD637 /* aes.h */,
-				E7D40C981D8FBE2100FCD637 /* asn1_mac.h */,
-				E7D40C991D8FBE2100FCD637 /* asn1.h */,
-				E7D40C9A1D8FBE2100FCD637 /* asn1t.h */,
-				E7D40C9B1D8FBE2100FCD637 /* bio.h */,
-				E7D40C9C1D8FBE2100FCD637 /* blowfish.h */,
-				E7D40C9D1D8FBE2100FCD637 /* bn.h */,
-				E7D40C9E1D8FBE2100FCD637 /* buffer.h */,
-				E7D40C9F1D8FBE2100FCD637 /* camellia.h */,
-				E7D40CA01D8FBE2100FCD637 /* cast.h */,
-				E7D40CA11D8FBE2100FCD637 /* cmac.h */,
-				E7D40CA21D8FBE2100FCD637 /* cms.h */,
-				E7D40CA31D8FBE2100FCD637 /* comp.h */,
-				E7D40CA41D8FBE2100FCD637 /* conf_api.h */,
-				E7D40CA51D8FBE2100FCD637 /* conf.h */,
-				E7D40CA61D8FBE2100FCD637 /* crypto.h */,
-				E7D40CA71D8FBE2100FCD637 /* des_old.h */,
-				E7D40CA81D8FBE2100FCD637 /* des.h */,
-				E7D40CA91D8FBE2100FCD637 /* dh.h */,
-				E7D40CAA1D8FBE2100FCD637 /* dsa.h */,
-				E7D40CAB1D8FBE2100FCD637 /* dso.h */,
-				E7D40CAC1D8FBE2100FCD637 /* dtls1.h */,
-				E7D40CAD1D8FBE2100FCD637 /* e_os2.h */,
-				E7D40CAE1D8FBE2100FCD637 /* ebcdic.h */,
-				E7D40CAF1D8FBE2100FCD637 /* ec.h */,
-				E7D40CB01D8FBE2100FCD637 /* ecdh.h */,
-				E7D40CB11D8FBE2100FCD637 /* ecdsa.h */,
-				E7D40CB21D8FBE2100FCD637 /* engine.h */,
-				E7D40CB31D8FBE2100FCD637 /* err.h */,
-				E7D40CB41D8FBE2100FCD637 /* evp.h */,
-				E7D40CB51D8FBE2100FCD637 /* hmac.h */,
-				E7D40CB61D8FBE2100FCD637 /* idea.h */,
-				E7D40CB71D8FBE2100FCD637 /* krb5_asn.h */,
-				E7D40CB81D8FBE2100FCD637 /* kssl.h */,
-				E7D40CB91D8FBE2100FCD637 /* lhash.h */,
-				E7D40CBA1D8FBE2100FCD637 /* md4.h */,
-				E7D40CBB1D8FBE2100FCD637 /* md5.h */,
-				E7D40CBC1D8FBE2100FCD637 /* mdc2.h */,
-				E7D40CBD1D8FBE2100FCD637 /* modes.h */,
-				E7D40CBE1D8FBE2100FCD637 /* obj_mac.h */,
-				E7D40CBF1D8FBE2100FCD637 /* objects.h */,
-				E7D40CC01D8FBE2100FCD637 /* ocsp.h */,
-				E7D40CC11D8FBE2100FCD637 /* opensslconf.h */,
-				E7D40CC21D8FBE2100FCD637 /* opensslv.h */,
-				E7D40CC31D8FBE2100FCD637 /* ossl_typ.h */,
-				E7D40CC41D8FBE2100FCD637 /* pem.h */,
-				E7D40CC51D8FBE2100FCD637 /* pem2.h */,
-				E7D40CC61D8FBE2100FCD637 /* pkcs7.h */,
-				E7D40CC71D8FBE2100FCD637 /* pkcs12.h */,
-				E7D40CC81D8FBE2100FCD637 /* pqueue.h */,
-				E7D40CC91D8FBE2100FCD637 /* rand.h */,
-				E7D40CCA1D8FBE2100FCD637 /* rc2.h */,
-				E7D40CCB1D8FBE2100FCD637 /* rc4.h */,
-				E7D40CCC1D8FBE2100FCD637 /* ripemd.h */,
-				E7D40CCD1D8FBE2100FCD637 /* rsa.h */,
-				E7D40CCE1D8FBE2100FCD637 /* safestack.h */,
-				E7D40CCF1D8FBE2100FCD637 /* seed.h */,
-				E7D40CD01D8FBE2100FCD637 /* sha.h */,
-				E7D40CD11D8FBE2100FCD637 /* srp.h */,
-				E7D40CD21D8FBE2100FCD637 /* srtp.h */,
-				E7D40CD31D8FBE2100FCD637 /* ssl.h */,
-				E7D40CD41D8FBE2100FCD637 /* ssl2.h */,
-				E7D40CD51D8FBE2100FCD637 /* ssl3.h */,
-				E7D40CD61D8FBE2100FCD637 /* ssl23.h */,
-				E7D40CD71D8FBE2100FCD637 /* stack.h */,
-				E7D40CD81D8FBE2100FCD637 /* symhacks.h */,
-				E7D40CD91D8FBE2100FCD637 /* tls1.h */,
-				E7D40CDA1D8FBE2100FCD637 /* ts.h */,
-				E7D40CDB1D8FBE2100FCD637 /* txt_db.h */,
-				E7D40CDC1D8FBE2100FCD637 /* ui_compat.h */,
-				E7D40CDD1D8FBE2100FCD637 /* ui.h */,
-				E7D40CDE1D8FBE2100FCD637 /* whrlpool.h */,
-				E7D40CDF1D8FBE2100FCD637 /* x509_vfy.h */,
-				E7D40CE01D8FBE2100FCD637 /* x509.h */,
-				E7D40CE11D8FBE2100FCD637 /* x509v3.h */,
+				A059CD56CB2981ACCAF77415CAF96B8D /* DURabbitManager */,
 			);
-			name = Headers;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FE9811ABEB5931E154211FCA14B78350 /* Pods-Example */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB74AAA6B2AE8DABF0E88E61E09178 /* Info.plist */,
+				119072C64A19799964E1620D83F514FB /* Pods-Example.modulemap */,
+				A661FECCEBFF9D01869EE3B29C4C1EFF /* Pods-Example-acknowledgements.markdown */,
+				764D33E23CE6C1111110B04F5CBADADB /* Pods-Example-acknowledgements.plist */,
+				699118D7DDD5F335E4FB8B17DC0F12D2 /* Pods-Example-dummy.m */,
+				552550F3F912264E5D073F8893691F88 /* Pods-Example-frameworks.sh */,
+				01E6907CF2644EB1CF8E23F708A3DA0B /* Pods-Example-resources.sh */,
+				C9BDE82371C83FA9AE91B05F77ACAA36 /* Pods-Example-umbrella.h */,
+				149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */,
+				E512A5F985F876750237FD237C3AEEDA /* Pods-Example.release.xcconfig */,
+			);
+			name = "Pods-Example";
+			path = "Target Support Files/Pods-Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		137C4116120D535E424CC9BE99D149B2 /* Headers */ = {
+		BEB1F8E7A2BE29DC5930860A7E5ECBDE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E753CE05F40897B9B8AF6B398FCB9127 /* Pods-DURabbitManager_Example-umbrella.h in Headers */,
+				E3CB6BC8AD9032F6E9BF0B8C48F0328D /* aes.h in Headers */,
+				73B8D8D6824EB93C3B021A690E5EFC86 /* amqp.h in Headers */,
+				A954288332EF33B4FA998983839760EF /* amqp_framing.h in Headers */,
+				F90B66532C5592118F9CB168DE98AC80 /* amqp_ssl_socket.h in Headers */,
+				BB0E4E0F87F375D93CB8EDEC0DBB9AED /* amqp_tcp_socket.h in Headers */,
+				70D7AA461A138DBC3DBB2F35607E0BB4 /* asn1.h in Headers */,
+				AD9AB1B8E3DFE5E3626815F79C4E71E7 /* asn1_mac.h in Headers */,
+				F05884077FA7A640776C5DF432D0451D /* asn1t.h in Headers */,
+				6DC091E65B11A3CAE89E9AE5B2E2EA3D /* bio.h in Headers */,
+				84404EB6FF5416D918F1D08CEFEFA213 /* blowfish.h in Headers */,
+				C62AB42D4AF455B9714AE011BD9476E5 /* bn.h in Headers */,
+				53ADF78419CD7649B245BFDC1C709755 /* buffer.h in Headers */,
+				4C61E7963E0F4FE2C08A5569AE3720EA /* camellia.h in Headers */,
+				07291E3722B4B6F89E3EB9392039DF4A /* cast.h in Headers */,
+				167E0326C762D33359295DA0DF6FAF27 /* cmac.h in Headers */,
+				6690ADD1625862B888E1533707402B84 /* cms.h in Headers */,
+				71C6951E4EFB1BA93093B3219B019869 /* comp.h in Headers */,
+				24B105E3D1B4621B2BC13E2E95E94406 /* conf.h in Headers */,
+				D59D36F5FBEEA141EBC9801F5F02152E /* conf_api.h in Headers */,
+				6861041D89FFFD5C53B0251265FF07A0 /* crypto.h in Headers */,
+				45B32A8CD3D033B63669CF58A921701F /* des.h in Headers */,
+				CC4788BBC47985D3D8FF2BEE53F93241 /* des_old.h in Headers */,
+				A86D663E5A61BF5CD63DF435AE6ED200 /* dh.h in Headers */,
+				1F234C3C483AE3FBB717B4643B35E2F8 /* dsa.h in Headers */,
+				C2774AA419875DB217FEE3785D830770 /* dso.h in Headers */,
+				31CCE6A1D74D282420AD2933AE8297D0 /* dtls1.h in Headers */,
+				B0B08FC8B0F6989E09282D9EFB81C14A /* DURabbitManager-umbrella.h in Headers */,
+				599936A9EBE80DB3FA16D65CFC1053FF /* DURabbitManager.h in Headers */,
+				6435E393AF5C61CE37CAAABAC9A7D861 /* e_os2.h in Headers */,
+				A08E30AAADAD8910919963F6D8E57CE1 /* ebcdic.h in Headers */,
+				3EED22D3FA35082C46D56FEABBF8F44B /* ec.h in Headers */,
+				72088ED6FB6261D652D9FDA33A5313FE /* ecdh.h in Headers */,
+				14CE1B262676E0F782CED57144B7BFF0 /* ecdsa.h in Headers */,
+				2B269552AC22C1648286D4E0995ADC5C /* engine.h in Headers */,
+				BC1185B4F1FCC8A1EE0F4FA73EB20CF7 /* err.h in Headers */,
+				AAA94FF38841C0A840808181CBEA053C /* evp.h in Headers */,
+				A8601C421555DFECCCD9F8F27BF11080 /* hmac.h in Headers */,
+				FA5F34958EAE6F426E438EB26747F263 /* idea.h in Headers */,
+				88647A146F2F4843741B8CD57EB8CEBB /* krb5_asn.h in Headers */,
+				1B0CC13FA74251D328B6528944CA75B9 /* kssl.h in Headers */,
+				E8A4C0DCBA413E6C3991C0B1A9D4B9B9 /* lhash.h in Headers */,
+				D6E4EF8E0A482443A18652B09448CE52 /* md4.h in Headers */,
+				DEA3AD00BB1D4BBAC5E165D397CBBEC1 /* md5.h in Headers */,
+				C68F17CB9CCE1D224356967871429BB1 /* mdc2.h in Headers */,
+				089437399F8FA465237F9C27DCCF0D14 /* modes.h in Headers */,
+				D6E0F19A86CD3483043ACA2AACA6C427 /* obj_mac.h in Headers */,
+				E4D8162235B2EA57FBF9BB5CFF0FB213 /* objects.h in Headers */,
+				D1805655BE6CB93510A95F37A8E680B9 /* ocsp.h in Headers */,
+				3556614FF9911A1681014747FC3DE856 /* opensslconf.h in Headers */,
+				DFC083EA96D372BC6B7E7B56033B09D3 /* opensslv.h in Headers */,
+				BA1C9F9DEAD428D7D9945AD078C58974 /* ossl_typ.h in Headers */,
+				C456D3166E2791B4BA7226D485F5CF7F /* pem.h in Headers */,
+				167A03AFE187E49A9DAAC22B089A9AD0 /* pem2.h in Headers */,
+				DA59DA54350CC61FBC25FEE761087BC1 /* pkcs12.h in Headers */,
+				7E4D90DB363C203BF597966E256D5294 /* pkcs7.h in Headers */,
+				76503DE486C3FF02F87C9B0E7ED11B7A /* pqueue.h in Headers */,
+				DA7A6C0A9FF491D99B1F64D394BD52F1 /* rand.h in Headers */,
+				EDDF7AE3501AAEEB39F29766DE613B80 /* rc2.h in Headers */,
+				A6433C0F2AAF0B3A01E15DEA2F5E70A9 /* rc4.h in Headers */,
+				D53F721836A37AF2767C5D851F587C26 /* ripemd.h in Headers */,
+				52618100C048959037AB568CC28DE390 /* rsa.h in Headers */,
+				187E5C40B0492AE5BE4DED7920B61AAD /* safestack.h in Headers */,
+				01E33CAC99E91920EFD56573BD1C21B3 /* seed.h in Headers */,
+				F848D719682C0FD2BBE561DEC5230E09 /* sha.h in Headers */,
+				A457F0A214B0B6BDB75573930FC5A5CF /* srp.h in Headers */,
+				BA794105FC0FD296985B14A619CCB432 /* srtp.h in Headers */,
+				CAEDBD62946FD8647E8D4B24FAEEF5CD /* ssl.h in Headers */,
+				CF89AAAABCBA92A899E2546EEA33BB71 /* ssl2.h in Headers */,
+				4B56AB7AAEF369EEF7A3E7E8118C4488 /* ssl23.h in Headers */,
+				18159AC4086D607869C092484280D01A /* ssl3.h in Headers */,
+				B6F4AC45C9CCE060639AAB84F044A2A3 /* stack.h in Headers */,
+				24E379329DD8C8F6415D021E780A820C /* symhacks.h in Headers */,
+				813644FB342E28BFE8A1DFD8ADE95D42 /* tls1.h in Headers */,
+				0AE5D6F5F870CD69B756407F91EC5DAF /* ts.h in Headers */,
+				D83A5A3AAD4EBD08DAEC1F55B6FB28D2 /* txt_db.h in Headers */,
+				C87E19B4F6175E2D9E2B92C996FFBB66 /* ui.h in Headers */,
+				5186F762E47DFA5813A7A2AEC682B7EB /* ui_compat.h in Headers */,
+				C658637CDB6CC15A3B0823D993E08ED2 /* whrlpool.h in Headers */,
+				D3B6472337BA9C23E89C7C98BA75B960 /* x509.h in Headers */,
+				0B505FE2647379D7E492E121E71DC77F /* x509_vfy.h in Headers */,
+				A1998BDE27FA201673FEE6292B64161E /* x509v3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40AABC184384253D9D4C9DD4096FFD5F /* Headers */ = {
+		CBE93FDCAE6983CD034B5D146F14D4AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D40D201D8FBE2100FCD637 /* ssl3.h in Headers */,
-				E7D40D161D8FBE2100FCD637 /* rc4.h in Headers */,
-				E7D40CED1D8FBE2100FCD637 /* cms.h in Headers */,
-				E7D40CF41D8FBE2100FCD637 /* dh.h in Headers */,
-				E7D40D331D8FBE2900FCD637 /* amqp_tcp_socket.h in Headers */,
-				E7D40D311D8FBE2900FCD637 /* amqp_framing.h in Headers */,
-				E7D40D1B1D8FBE2100FCD637 /* sha.h in Headers */,
-				E7D40D041D8FBE2100FCD637 /* lhash.h in Headers */,
-				E7D40D111D8FBE2100FCD637 /* pkcs7.h in Headers */,
-				E7D40D061D8FBE2100FCD637 /* md5.h in Headers */,
-				E7D40CF91D8FBE2100FCD637 /* ebcdic.h in Headers */,
-				E7D40D291D8FBE2100FCD637 /* whrlpool.h in Headers */,
-				E7D40D341D8FBE2900FCD637 /* amqp.h in Headers */,
-				E7D40D0B1D8FBE2100FCD637 /* ocsp.h in Headers */,
-				E7D40D2C1D8FBE2100FCD637 /* x509v3.h in Headers */,
-				E7D40CEC1D8FBE2100FCD637 /* cmac.h in Headers */,
-				E7D40CF01D8FBE2100FCD637 /* conf.h in Headers */,
-				E7D40CF81D8FBE2100FCD637 /* e_os2.h in Headers */,
-				E7D40D141D8FBE2100FCD637 /* rand.h in Headers */,
-				E7D40CFF1D8FBE2100FCD637 /* evp.h in Headers */,
-				E7D40CE61D8FBE2100FCD637 /* bio.h in Headers */,
-				E7D40D221D8FBE2100FCD637 /* stack.h in Headers */,
-				E7D40D071D8FBE2100FCD637 /* mdc2.h in Headers */,
-				E7D40D181D8FBE2100FCD637 /* rsa.h in Headers */,
-				E7D40D0D1D8FBE2100FCD637 /* opensslv.h in Headers */,
-				E7D40CE51D8FBE2100FCD637 /* asn1t.h in Headers */,
-				E7D40D2A1D8FBE2100FCD637 /* x509_vfy.h in Headers */,
-				E7D40D0A1D8FBE2100FCD637 /* objects.h in Headers */,
-				E7D40D011D8FBE2100FCD637 /* idea.h in Headers */,
-				E7D40CFB1D8FBE2100FCD637 /* ecdh.h in Headers */,
-				E7D40CFC1D8FBE2100FCD637 /* ecdsa.h in Headers */,
-				E7D40D211D8FBE2100FCD637 /* ssl23.h in Headers */,
-				E7D40D0C1D8FBE2100FCD637 /* opensslconf.h in Headers */,
-				E7D40D121D8FBE2100FCD637 /* pkcs12.h in Headers */,
-				E7D40D171D8FBE2100FCD637 /* ripemd.h in Headers */,
-				E7D40CE81D8FBE2100FCD637 /* bn.h in Headers */,
-				E7D40D031D8FBE2100FCD637 /* kssl.h in Headers */,
-				E7D40D261D8FBE2100FCD637 /* txt_db.h in Headers */,
-				E7D40CEE1D8FBE2100FCD637 /* comp.h in Headers */,
-				E7D40D021D8FBE2100FCD637 /* krb5_asn.h in Headers */,
-				E7D40CFA1D8FBE2100FCD637 /* ec.h in Headers */,
-				E7D40CF31D8FBE2100FCD637 /* des.h in Headers */,
-				E7D40D231D8FBE2100FCD637 /* symhacks.h in Headers */,
-				E7D40D1F1D8FBE2100FCD637 /* ssl2.h in Headers */,
-				E7D40D131D8FBE2100FCD637 /* pqueue.h in Headers */,
-				E7D40D1D1D8FBE2100FCD637 /* srtp.h in Headers */,
-				E7D40CF21D8FBE2100FCD637 /* des_old.h in Headers */,
-				E7D40D321D8FBE2900FCD637 /* amqp_ssl_socket.h in Headers */,
-				E7D40CEB1D8FBE2100FCD637 /* cast.h in Headers */,
-				E7D40D271D8FBE2100FCD637 /* ui_compat.h in Headers */,
-				E7D40CF51D8FBE2100FCD637 /* dsa.h in Headers */,
-				E7D40CE41D8FBE2100FCD637 /* asn1.h in Headers */,
-				E7D40D251D8FBE2100FCD637 /* ts.h in Headers */,
-				E7D40CFD1D8FBE2100FCD637 /* engine.h in Headers */,
-				E7D40D051D8FBE2100FCD637 /* md4.h in Headers */,
-				E7D40CFE1D8FBE2100FCD637 /* err.h in Headers */,
-				E7D40D151D8FBE2100FCD637 /* rc2.h in Headers */,
-				E7D40CF61D8FBE2100FCD637 /* dso.h in Headers */,
-				E7D40D001D8FBE2100FCD637 /* hmac.h in Headers */,
-				E7D40CE21D8FBE2100FCD637 /* aes.h in Headers */,
-				E7D40D0E1D8FBE2100FCD637 /* ossl_typ.h in Headers */,
-				E7D40D1C1D8FBE2100FCD637 /* srp.h in Headers */,
-				E7D40CEA1D8FBE2100FCD637 /* camellia.h in Headers */,
-				E7D40CF11D8FBE2100FCD637 /* crypto.h in Headers */,
-				E7D40D101D8FBE2100FCD637 /* pem2.h in Headers */,
-				E7D40D281D8FBE2100FCD637 /* ui.h in Headers */,
-				E7D40D241D8FBE2100FCD637 /* tls1.h in Headers */,
-				E7D40D081D8FBE2100FCD637 /* modes.h in Headers */,
-				E7D40D191D8FBE2100FCD637 /* safestack.h in Headers */,
-				E7D40D1A1D8FBE2100FCD637 /* seed.h in Headers */,
-				48583CFB164CD1F164A76D03A1679749 /* DURabbitManager-umbrella.h in Headers */,
-				E7D40D2B1D8FBE2100FCD637 /* x509.h in Headers */,
-				E992C60A9D441867002E91EACD6FB39E /* DURabbitManager.h in Headers */,
-				E7D40CE71D8FBE2100FCD637 /* blowfish.h in Headers */,
-				E7D40CE91D8FBE2100FCD637 /* buffer.h in Headers */,
-				E7D40CF71D8FBE2100FCD637 /* dtls1.h in Headers */,
-				E7D40CE31D8FBE2100FCD637 /* asn1_mac.h in Headers */,
-				E7D40D0F1D8FBE2100FCD637 /* pem.h in Headers */,
-				E7D40D1E1D8FBE2100FCD637 /* ssl.h in Headers */,
-				E7D40D091D8FBE2100FCD637 /* obj_mac.h in Headers */,
-				E7D40CEF1D8FBE2100FCD637 /* conf_api.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44D11FA44D3DE7DAA110C4AB10EB386C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F64FD7FE1683925D04402B8F9186CDF0 /* Pods-DURabbitManager_Tests-umbrella.h in Headers */,
+				78E2214F4CD8754BA91847FF7C24E3F6 /* Pods-Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		12A9710FC448B2DF887238B59C63AD2F /* DURabbitManager */ = {
+		7E6C8FD40B340705B168F846ABD6126D /* DURabbitManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 824DA53A7C43086753C9B50AB377C479 /* Build configuration list for PBXNativeTarget "DURabbitManager" */;
+			buildConfigurationList = 7367F45805AD9EFA070E91FB3E95CA99 /* Build configuration list for PBXNativeTarget "DURabbitManager" */;
 			buildPhases = (
-				026D02A57175817E24B244BFDBE0FDBF /* Sources */,
-				4ADFCE21735290EC0EDD3DB4634EA096 /* Frameworks */,
-				40AABC184384253D9D4C9DD4096FFD5F /* Headers */,
+				EFF0B862D73D22F6E0CF056EA13E5C74 /* Sources */,
+				14A15DFAEC877B5FE14B7145E6C2D6AB /* Frameworks */,
+				BEB1F8E7A2BE29DC5930860A7E5ECBDE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -598,42 +579,25 @@
 			);
 			name = DURabbitManager;
 			productName = DURabbitManager;
-			productReference = C05421544078BE4FA5B6EE31F0D6E2C4 /* DURabbitManager.framework */;
+			productReference = B55205F775299457ABB1E106D9D436EA /* DURabbitManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5344B271660ED058357A089569985DB2 /* Pods-DURabbitManager_Tests */ = {
+		91261D0CE33E5024F1FFAB698F5265D3 /* Pods-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D67F7C0008FEEC609915D0DE0B2EA939 /* Build configuration list for PBXNativeTarget "Pods-DURabbitManager_Tests" */;
+			buildConfigurationList = DAF1F6D72FA857BD4D30CED77C439F5C /* Build configuration list for PBXNativeTarget "Pods-Example" */;
 			buildPhases = (
-				E4DE6CA616E99FDF02B79E1656D7BB12 /* Sources */,
-				01D0877F611129553A9A5E40190A878C /* Frameworks */,
-				44D11FA44D3DE7DAA110C4AB10EB386C /* Headers */,
+				B5DA035C956CAB373E7DB004D14559A6 /* Sources */,
+				F4561244813FC1AE094F339693143CC8 /* Frameworks */,
+				CBE93FDCAE6983CD034B5D146F14D4AD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AAE41DF7104CF7FEE1BB301D92D413CE /* PBXTargetDependency */,
 			);
-			name = "Pods-DURabbitManager_Tests";
-			productName = "Pods-DURabbitManager_Tests";
-			productReference = 0123297DFB88BC84D6076E0E78BE0D38 /* Pods_DURabbitManager_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		930DC7647D4733C112C856670746A722 /* Pods-DURabbitManager_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA1C84CB982E7385C1C88F406D47098E /* Build configuration list for PBXNativeTarget "Pods-DURabbitManager_Example" */;
-			buildPhases = (
-				9A383714AA0B2A0837665EF22EE773B7 /* Sources */,
-				F0F72C28B6915E6DA450E9F964896787 /* Frameworks */,
-				137C4116120D535E424CC9BE99D149B2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7C4C48D29C180FE482AC4B337AA8694A /* PBXTargetDependency */,
-			);
-			name = "Pods-DURabbitManager_Example";
-			productName = "Pods-DURabbitManager_Example";
-			productReference = 3D2CAD2C418111879CC55C3A8C106B92 /* Pods_DURabbitManager_Example.framework */;
+			name = "Pods-Example";
+			productName = "Pods-Example";
+			productReference = 60CBDA7371E1AE0E3388F1E472D555E5 /* Pods_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -653,129 +617,50 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D94B2BC90807124D4C6D8900B73C5F94 /* Products */;
+			productRefGroup = E940DA9F87D957513E8888C8A4834110 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12A9710FC448B2DF887238B59C63AD2F /* DURabbitManager */,
-				930DC7647D4733C112C856670746A722 /* Pods-DURabbitManager_Example */,
-				5344B271660ED058357A089569985DB2 /* Pods-DURabbitManager_Tests */,
+				7E6C8FD40B340705B168F846ABD6126D /* DURabbitManager */,
+				91261D0CE33E5024F1FFAB698F5265D3 /* Pods-Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		026D02A57175817E24B244BFDBE0FDBF /* Sources */ = {
+		B5DA035C956CAB373E7DB004D14559A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F32E0BD4AE08873F8209A87D3DD489 /* DURabbitManager-dummy.m in Sources */,
-				492311AB74087EF1FCFAF33E22704994 /* DURabbitManager.m in Sources */,
+				038289D5466095FF4869DCCBFC6EB71E /* Pods-Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A383714AA0B2A0837665EF22EE773B7 /* Sources */ = {
+		EFF0B862D73D22F6E0CF056EA13E5C74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0315081E21EE7FBA66B81ED2996771D5 /* Pods-DURabbitManager_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4DE6CA616E99FDF02B79E1656D7BB12 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C581B628AA7B71161099D14901EB6F2 /* Pods-DURabbitManager_Tests-dummy.m in Sources */,
+				98A5E34793BE0B78A5840A2AAE224D5F /* DURabbitManager-dummy.m in Sources */,
+				3E0D076FCD76ECDD539362229D789598 /* DURabbitManager.m in Sources */,
+				F6AA81849B7727C5D9D358080E14BB30 /* libDURabbit.a in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7C4C48D29C180FE482AC4B337AA8694A /* PBXTargetDependency */ = {
+		AAE41DF7104CF7FEE1BB301D92D413CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DURabbitManager;
-			target = 12A9710FC448B2DF887238B59C63AD2F /* DURabbitManager */;
-			targetProxy = 2BFD17366B95471C682EE8F22AB1D77E /* PBXContainerItemProxy */;
+			target = 7E6C8FD40B340705B168F846ABD6126D /* DURabbitManager */;
+			targetProxy = B4E2895FF7ADAA7E9D4895B9E533E807 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+		0872D5F37A6FE0C7E56313E7F1995F39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6998790B1A66FCCB1BBE317A4C1F9746 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56B5DD56ADCACE197DD325163CB29E98 /* Pods-DURabbitManager_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DURabbitManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DURabbitManager_Tests/Pods-DURabbitManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DURabbitManager_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		77C1295172EBB85E3F68FDCEBBA35B8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71047049A55E76F92A2E8DF18F49F3E7 /* Pods-DURabbitManager_Example.debug.xcconfig */;
+			baseConfigurationReference = 10DE6561D7488FD689400DB38686140A /* DURabbitManager.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -784,85 +669,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DURabbitManager_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DURabbitManager_Example/Pods-DURabbitManager_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DURabbitManager_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9BD5E3B39B7B3AF96FD36A8CCD621847 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D4BBC01A522A5680D4A4393231FA5AC /* Pods-DURabbitManager_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DURabbitManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DURabbitManager_Tests/Pods-DURabbitManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DURabbitManager_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A10C40FDC40D2DB737667D11CE1A4BE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0F8B7E7C30C96BDA05CBA302293C0DA /* DURabbitManager.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/DURabbitManager/DURabbitManager-prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers/Private\"",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"/Users/ariffikriabas/Documents/Developer/DURabbitManager/DURabbitManager/Headers/**",
-				);
 				INFOPLIST_FILE = "Target Support Files/DURabbitManager/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /Users/ariffikriabas/Documents/Developer/DURabbitManager/DURabbitManager/Library;
 				MODULEMAP_FILE = "Target Support Files/DURabbitManager/DURabbitManager.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = DURabbitManager;
@@ -874,42 +688,7 @@
 			};
 			name = Debug;
 		};
-		BF490AB77E9BBD40E263F57FA6B17C01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0F8B7E7C30C96BDA05CBA302293C0DA /* DURabbitManager.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DURabbitManager/DURabbitManager-prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers/Private\"",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"/Users/ariffikriabas/Documents/Developer/DURabbitManager/DURabbitManager/Headers/**",
-				);
-				INFOPLIST_FILE = "Target Support Files/DURabbitManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /Users/ariffikriabas/Documents/Developer/DURabbitManager/DURabbitManager/Library;
-				MODULEMAP_FILE = "Target Support Files/DURabbitManager/DURabbitManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DURabbitManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -944,16 +723,54 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		F750B3119F5554FD702C3552B1D0610C /* Release */ = {
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E0DBCC3F13D4D0B53FC0D27678901AE /* Pods-DURabbitManager_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E19583CB10E445E94B7D3C58F9D796B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10DE6561D7488FD689400DB38686140A /* DURabbitManager.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -962,20 +779,85 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DURabbitManager_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DURabbitManager/DURabbitManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DURabbitManager/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DURabbitManager/DURabbitManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DURabbitManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE43C1F44AE8EBD2EEBE055A780B2260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DURabbitManager_Example/Pods-DURabbitManager_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F31E58BC5AC1A76AEC678E822B1A7634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E512A5F985F876750237FD237C3AEEDA /* Pods-Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DURabbitManager_Example;
+				PRODUCT_NAME = Pods_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -990,35 +872,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		824DA53A7C43086753C9B50AB377C479 /* Build configuration list for PBXNativeTarget "DURabbitManager" */ = {
+		7367F45805AD9EFA070E91FB3E95CA99 /* Build configuration list for PBXNativeTarget "DURabbitManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A10C40FDC40D2DB737667D11CE1A4BE4 /* Debug */,
-				BF490AB77E9BBD40E263F57FA6B17C01 /* Release */,
+				0872D5F37A6FE0C7E56313E7F1995F39 /* Debug */,
+				E19583CB10E445E94B7D3C58F9D796B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D67F7C0008FEEC609915D0DE0B2EA939 /* Build configuration list for PBXNativeTarget "Pods-DURabbitManager_Tests" */ = {
+		DAF1F6D72FA857BD4D30CED77C439F5C /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BD5E3B39B7B3AF96FD36A8CCD621847 /* Debug */,
-				6998790B1A66FCCB1BBE317A4C1F9746 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA1C84CB982E7385C1C88F406D47098E /* Build configuration list for PBXNativeTarget "Pods-DURabbitManager_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77C1295172EBB85E3F68FDCEBBA35B8E /* Debug */,
-				F750B3119F5554FD702C3552B1D0610C /* Release */,
+				EE43C1F44AE8EBD2EEBE055A780B2260 /* Debug */,
+				F31E58BC5AC1A76AEC678E822B1A7634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

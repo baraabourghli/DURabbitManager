@@ -10,28 +10,19 @@
 #import "DURabbitManager.h"
 
 @interface DUMessagingController ()
-@property (strong, nonatomic) IBOutlet UITextField *messageTextField;
+@property (weak, nonatomic) IBOutlet UITextField *messageTextField;
 @end
 
 @implementation DUMessagingController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 - (IBAction)sendMessage:(id)sender {
+    [[DURabbitManager sharedManager] sendMesage:@"Hi Back" immedite:YES];
 }
 
 - (IBAction)endSession:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
-        [[DURabbitManager sharedManager] stop];
+        [[DURabbitManager sharedManager] stopConsuming];
     }];
 }
-
 
 @end
