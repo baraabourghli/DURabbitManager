@@ -19,14 +19,14 @@ Minimum Xcode Version: Xcode 8.0
 
 #### Cocoapod Method:
 
-***DURabbitManager (Objective-C):-*** DURabbitManager is available through [CocoaPods](http://cocoapods.org), to install
+`DURabbitManager` is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
 `pod 'DURabbitManager'`
 
 #### Source Code Method:
 
-***DURabbitManager (Objective-C):-*** Just ***drag and drop*** `DURabbitManager` directory from demo project to your project. And you can start to use.
+*** Just ***drag and drop*** `DURabbitManager` directory from demo project to your project. And you can start to use.
 
 ### How to use
 ---
