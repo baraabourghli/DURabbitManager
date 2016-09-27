@@ -16,6 +16,7 @@ Minimum iOS Target: iOS 8.0
 Minimum Xcode Version: Xcode 8.0
 
 ### Installation
+---
 
 #### Cocoapod Method:
 
