@@ -29,6 +29,7 @@ it simply add the following line to your Podfile:
 ***DURabbitManager (Objective-C):-*** Just ***drag and drop*** `DURabbitManager` directory from demo project to your project. And you can start to use.
 
 ### How to use
+---
 
 ```objc
 
@@ -46,6 +47,7 @@ DURabbitManager *rabbitManager = [DURabbitManager sharedManager];
 ```
 
 ### How to Try it out
+---
 
 - Install RabbitMQ server on your machine, you can use Homebrew to install on Mac `brew install rabbitmq`
 - To be able to connect to it from your iPhone over the LAN, you need to tweak the server config a bit
@@ -64,9 +66,10 @@ DURabbitManager *rabbitManager = [DURabbitManager sharedManager];
 - That's it, it was easy :)
 
 ### TODO
+---
 
 - Ability to publish a message from the app, checkout https://github.com/duriana/DURabbitManager/blob/master/DURabbitManager/Classes/DURabbitManager.m#L274
 
-Contributions
+### Contributions
 ---
 Any contribution is more than welcome! You can contribute through pull requests and issues on GitHub.
