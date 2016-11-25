@@ -3,6 +3,7 @@ An easy to use RabbitMQ integration to be used in iOS apps
 
 This repository contains source code of the RabbitMQ Objective-C client. The client is maintained by the Duriana team at Duriana Internet.
 
+
 ### Requirements
 [![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue.svg?style=fla)]()
 
